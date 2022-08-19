@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 96 240 264 256)
+	(rect 96 256 264 272)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "SinalB" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
@@ -142,28 +142,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 320 288 448 384)
-	(text "ComplementoA2" (rect 5 0 97 14)(font "Arial" (font_size 8)))
-	(text "inst7" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[3..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "A[3..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 128 32)
-		(output)
-		(text "C[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "C[3..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 112 80)(line_width 1))
-	)
-)
-(symbol
 	(rect 656 184 784 312)
 	(text "somadorSupremo" (rect 5 0 105 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
@@ -223,34 +201,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 264 248)
-	(pt 344 248)
-)
-(connector
-	(pt 392 248)
-	(pt 656 248)
-)
-(connector
-	(pt 320 320)
-	(pt 264 320)
-	(bus)
-)
-(connector
-	(pt 448 320)
-	(pt 608 320)
-	(bus)
-)
-(connector
-	(pt 608 320)
-	(pt 608 264)
-	(bus)
-)
-(connector
-	(pt 656 264)
-	(pt 608 264)
-	(bus)
-)
-(connector
 	(pt 784 232)
 	(pt 872 232)
 	(bus)
@@ -258,4 +208,35 @@ applicable agreement for further details.
 (connector
 	(pt 872 216)
 	(pt 784 216)
+)
+(connector
+	(pt 272 248)
+	(pt 272 264)
+)
+(connector
+	(pt 344 248)
+	(pt 272 248)
+)
+(connector
+	(pt 272 264)
+	(pt 264 264)
+)
+(connector
+	(pt 640 264)
+	(pt 656 264)
+	(bus)
+)
+(connector
+	(pt 392 248)
+	(pt 656 248)
+)
+(connector
+	(pt 640 320)
+	(pt 264 320)
+	(bus)
+)
+(connector
+	(pt 640 320)
+	(pt 640 264)
+	(bus)
 )

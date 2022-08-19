@@ -1,6 +1,6 @@
 Classic Timing Analyzer report for projetoSD
-Fri Aug 19 15:30:12 2022
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Fri Aug 19 17:34:12 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                                   ;
-+------------------------------+-------+---------------+-------------+--------+------+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From   ; To   ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+--------+------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 15.534 ns   ; sinalA ; S[2] ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;        ;      ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+--------+------+------------+----------+--------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                    ;
++------------------------------+-------+---------------+-------------+------+---------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To      ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+---------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 14.429 ns   ; B[0] ; AmaiorB ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;         ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+---------+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -95,64 +95,22 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------+
-; tpd                                                          ;
-+-------+-------------------+-----------------+--------+-------+
-; Slack ; Required P2P Time ; Actual P2P Time ; From   ; To    ;
-+-------+-------------------+-----------------+--------+-------+
-; N/A   ; None              ; 15.534 ns       ; sinalA ; S[2]  ;
-; N/A   ; None              ; 15.532 ns       ; sinalA ; S[4]  ;
-; N/A   ; None              ; 15.505 ns       ; sinalA ; S[3]  ;
-; N/A   ; None              ; 15.296 ns       ; sinalA ; S[1]  ;
-; N/A   ; None              ; 15.190 ns       ; sinalB ; S[4]  ;
-; N/A   ; None              ; 15.169 ns       ; sinalB ; S[3]  ;
-; N/A   ; None              ; 15.020 ns       ; sinalA ; Sinal ;
-; N/A   ; None              ; 14.892 ns       ; B[3]   ; S[4]  ;
-; N/A   ; None              ; 14.871 ns       ; B[3]   ; S[3]  ;
-; N/A   ; None              ; 14.708 ns       ; A[2]   ; S[2]  ;
-; N/A   ; None              ; 14.706 ns       ; A[2]   ; S[4]  ;
-; N/A   ; None              ; 14.679 ns       ; A[2]   ; S[3]  ;
-; N/A   ; None              ; 14.470 ns       ; A[2]   ; S[1]  ;
-; N/A   ; None              ; 14.348 ns       ; sinalB ; S[2]  ;
-; N/A   ; None              ; 14.194 ns       ; A[2]   ; Sinal ;
-; N/A   ; None              ; 14.153 ns       ; B[2]   ; S[4]  ;
-; N/A   ; None              ; 14.132 ns       ; B[2]   ; S[3]  ;
-; N/A   ; None              ; 14.080 ns       ; B[3]   ; S[2]  ;
-; N/A   ; None              ; 13.842 ns       ; B[3]   ; S[1]  ;
-; N/A   ; None              ; 13.835 ns       ; B[2]   ; S[2]  ;
-; N/A   ; None              ; 13.597 ns       ; B[2]   ; S[1]  ;
-; N/A   ; None              ; 13.566 ns       ; B[3]   ; Sinal ;
-; N/A   ; None              ; 13.452 ns       ; sinalB ; S[1]  ;
-; N/A   ; None              ; 13.321 ns       ; B[2]   ; Sinal ;
-; N/A   ; None              ; 13.281 ns       ; A[3]   ; S[4]  ;
-; N/A   ; None              ; 13.260 ns       ; A[3]   ; S[3]  ;
-; N/A   ; None              ; 13.134 ns       ; A[3]   ; S[2]  ;
-; N/A   ; None              ; 12.896 ns       ; A[3]   ; S[1]  ;
-; N/A   ; None              ; 12.620 ns       ; A[3]   ; Sinal ;
-; N/A   ; None              ; 12.371 ns       ; sinalB ; Sinal ;
-; N/A   ; None              ; 11.078 ns       ; B[0]   ; S[2]  ;
-; N/A   ; None              ; 11.076 ns       ; B[0]   ; S[4]  ;
-; N/A   ; None              ; 11.049 ns       ; B[0]   ; S[3]  ;
-; N/A   ; None              ; 10.840 ns       ; B[0]   ; S[1]  ;
-; N/A   ; None              ; 10.717 ns       ; A[1]   ; S[4]  ;
-; N/A   ; None              ; 10.696 ns       ; A[1]   ; S[3]  ;
-; N/A   ; None              ; 10.678 ns       ; A[0]   ; S[2]  ;
-; N/A   ; None              ; 10.676 ns       ; A[0]   ; S[4]  ;
-; N/A   ; None              ; 10.649 ns       ; A[0]   ; S[3]  ;
-; N/A   ; None              ; 10.564 ns       ; B[0]   ; Sinal ;
-; N/A   ; None              ; 10.440 ns       ; A[0]   ; S[1]  ;
-; N/A   ; None              ; 10.334 ns       ; A[1]   ; S[2]  ;
-; N/A   ; None              ; 10.250 ns       ; B[1]   ; S[4]  ;
-; N/A   ; None              ; 10.229 ns       ; B[1]   ; S[3]  ;
-; N/A   ; None              ; 10.164 ns       ; A[0]   ; Sinal ;
-; N/A   ; None              ; 10.096 ns       ; A[1]   ; S[1]  ;
-; N/A   ; None              ; 10.080 ns       ; B[1]   ; S[2]  ;
-; N/A   ; None              ; 9.842 ns        ; B[1]   ; S[1]  ;
-; N/A   ; None              ; 9.820 ns        ; A[1]   ; Sinal ;
-; N/A   ; None              ; 9.566 ns        ; B[1]   ; Sinal ;
-; N/A   ; None              ; 6.230 ns        ; B[0]   ; S[0]  ;
-; N/A   ; None              ; 6.070 ns        ; A[0]   ; S[0]  ;
-+-------+-------------------+-----------------+--------+-------+
++----------------------------------------------------------------+
+; tpd                                                            ;
++-------+-------------------+-----------------+--------+---------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From   ; To      ;
++-------+-------------------+-----------------+--------+---------+
+; N/A   ; None              ; 14.429 ns       ; B[0]   ; AmaiorB ;
+; N/A   ; None              ; 13.685 ns       ; SinalA ; AmaiorB ;
+; N/A   ; None              ; 13.078 ns       ; A[1]   ; AmaiorB ;
+; N/A   ; None              ; 13.059 ns       ; B[1]   ; AmaiorB ;
+; N/A   ; None              ; 12.808 ns       ; A[2]   ; AmaiorB ;
+; N/A   ; None              ; 12.374 ns       ; B[2]   ; AmaiorB ;
+; N/A   ; None              ; 12.065 ns       ; A[3]   ; AmaiorB ;
+; N/A   ; None              ; 11.480 ns       ; B[3]   ; AmaiorB ;
+; N/A   ; None              ; 11.183 ns       ; SinalB ; AmaiorB ;
+; N/A   ; None              ; 10.165 ns       ; A[0]   ; AmaiorB ;
++-------+-------------------+-----------------+--------+---------+
 
 
 +--------------------------+
@@ -160,25 +118,24 @@ applicable agreement for further details.
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Fri Aug 19 15:30:12 2022
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Aug 19 17:34:11 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off projetoSD -c projetoSD --timing_analysis_only
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Longest tpd from source pin "sinalA" to destination pin "S[2]" is 15.534 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.891 ns) = 0.891 ns; Loc. = PIN_C1; Fanout = 8; PIN Node = 'sinalA'
-    Info: 2: + IC(5.989 ns) + CELL(0.333 ns) = 7.213 ns; Loc. = LCCOMB_X3_Y5_N24; Fanout = 1; COMB Node = 'decidirSinal:inst1|inst14~0'
-    Info: 3: + IC(0.536 ns) + CELL(0.184 ns) = 7.933 ns; Loc. = LCCOMB_X3_Y5_N2; Fanout = 1; COMB Node = 'decidirSinal:inst1|inst14~1'
-    Info: 4: + IC(0.309 ns) + CELL(0.184 ns) = 8.426 ns; Loc. = LCCOMB_X3_Y5_N28; Fanout = 1; COMB Node = 'decidirSinal:inst1|inst14~2'
-    Info: 5: + IC(0.301 ns) + CELL(0.184 ns) = 8.911 ns; Loc. = LCCOMB_X3_Y5_N30; Fanout = 1; COMB Node = 'decidirSinal:inst1|inst14~3'
-    Info: 6: + IC(1.126 ns) + CELL(0.184 ns) = 10.221 ns; Loc. = LCCOMB_X2_Y6_N16; Fanout = 5; COMB Node = 'decidirSinal:inst1|inst14~4'
-    Info: 7: + IC(0.377 ns) + CELL(0.565 ns) = 11.163 ns; Loc. = LCCOMB_X2_Y6_N6; Fanout = 1; COMB Node = 'mux2x1-5:inst8|inst14~0'
-    Info: 8: + IC(1.446 ns) + CELL(2.925 ns) = 15.534 ns; Loc. = PIN_E1; Fanout = 0; PIN Node = 'S[2]'
-    Info: Total cell delay = 5.450 ns ( 35.08 % )
-    Info: Total interconnect delay = 10.084 ns ( 64.92 % )
+Info: Longest tpd from source pin "B[0]" to destination pin "AmaiorB" is 14.429 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.871 ns) = 0.871 ns; Loc. = PIN_K1; Fanout = 1; PIN Node = 'B[0]'
+    Info: 2: + IC(5.882 ns) + CELL(0.534 ns) = 7.287 ns; Loc. = LCCOMB_X4_Y11_N8; Fanout = 1; COMB Node = 'inst2~0'
+    Info: 3: + IC(0.300 ns) + CELL(0.539 ns) = 8.126 ns; Loc. = LCCOMB_X4_Y11_N2; Fanout = 1; COMB Node = 'inst2~1'
+    Info: 4: + IC(0.301 ns) + CELL(0.539 ns) = 8.966 ns; Loc. = LCCOMB_X4_Y11_N12; Fanout = 1; COMB Node = 'inst2~2'
+    Info: 5: + IC(0.295 ns) + CELL(0.184 ns) = 9.445 ns; Loc. = LCCOMB_X4_Y11_N30; Fanout = 1; COMB Node = 'inst2~3'
+    Info: 6: + IC(0.297 ns) + CELL(0.184 ns) = 9.926 ns; Loc. = LCCOMB_X4_Y11_N0; Fanout = 1; COMB Node = 'inst2~4'
+    Info: 7: + IC(1.588 ns) + CELL(2.915 ns) = 14.429 ns; Loc. = PIN_K5; Fanout = 0; PIN Node = 'AmaiorB'
+    Info: Total cell delay = 5.766 ns ( 39.96 % )
+    Info: Total interconnect delay = 8.663 ns ( 60.04 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 181 megabytes
-    Info: Processing ended: Fri Aug 19 15:30:12 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 180 megabytes
+    Info: Processing ended: Fri Aug 19 17:34:12 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

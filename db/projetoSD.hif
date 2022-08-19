@@ -1,5 +1,5 @@
 Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 11
 918
 OFF
@@ -20,27 +20,10 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-axorb
-# storage
-db|projetoSD.(0).cnf
-db|projetoSD.(0).cnf
-# case_insensitive
-# source_file
-axorb.bdf
-f34e422545b346276f1cf2f168af418b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 decidirSinal
 # storage
-db|projetoSD.(2).cnf
-db|projetoSD.(2).cnf
+db|projetoSD.(1).cnf
+db|projetoSD.(1).cnf
 # case_insensitive
 # source_file
 decidirsinal.bdf
@@ -50,17 +33,14 @@ decidirsinal.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-decidirSinal:inst1
-}
 # macro_sequence
 
 # end
 # entity
 AmaiorB
 # storage
-db|projetoSD.(3).cnf
-db|projetoSD.(3).cnf
+db|projetoSD.(2).cnf
+db|projetoSD.(2).cnf
 # case_insensitive
 # source_file
 amaiorb.bdf
@@ -71,8 +51,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-decidirSinal:inst1|AmaiorB:inst3
-decidirSinal:inst1|AmaiorB:inst2
+|
 }
 # macro_sequence
 
@@ -80,8 +59,8 @@ decidirSinal:inst1|AmaiorB:inst2
 # entity
 AigualB
 # storage
-db|projetoSD.(4).cnf
-db|projetoSD.(4).cnf
+db|projetoSD.(3).cnf
+db|projetoSD.(3).cnf
 # case_insensitive
 # source_file
 aigualb.bdf
@@ -92,9 +71,24 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-decidirSinal:inst1|AmaiorB:inst3|AigualB:inst12
-decidirSinal:inst1|AigualB:inst
-decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
+AigualB:inst12
+}
+# macro_sequence
+
+# end
+# entity
+Mux2x1-5
+# storage
+db|projetoSD.(4).cnf
+db|projetoSD.(4).cnf
+# case_insensitive
+# source_file
+mux2x1-5.bdf
+6d59b1f691327efa2cc5429c3e67a043
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # macro_sequence
 
@@ -113,9 +107,6 @@ somatotal.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-SomaTotal:inst3
-}
 # macro_sequence
 
 # end
@@ -132,25 +123,6 @@ somadorcompleto.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-SomaTotal:inst3|SomadorCompleto:inst
-SomaTotal:inst3|SomadorCompleto:inst4
-SomaTotal:inst3|SomadorCompleto:inst5
-SomaTotal:inst3|SomadorCompleto:inst6
-ComplementoA2:inst|SomadorCompleto:inst
-ComplementoA2:inst|SomadorCompleto:inst1
-ComplementoA2:inst|SomadorCompleto:inst2
-ComplementoA2:inst|SomadorCompleto:inst3
-ComplementoA2:inst2|SomadorCompleto:inst
-ComplementoA2:inst2|SomadorCompleto:inst1
-ComplementoA2:inst2|SomadorCompleto:inst2
-ComplementoA2:inst2|SomadorCompleto:inst3
-comp2-5:inst10|SomadorCompleto:inst
-comp2-5:inst10|SomadorCompleto:inst1
-comp2-5:inst10|SomadorCompleto:inst2
-comp2-5:inst10|SomadorCompleto:inst3
-comp2-5:inst10|SomadorCompleto:inst10
 }
 # macro_sequence
 
@@ -169,10 +141,6 @@ a5b29bf7b69ebd7fbce9c8609a356d69
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-mux2x1:inst5
-mux2x1:inst6
-}
 # macro_sequence
 
 # end
@@ -190,38 +158,14 @@ complementoa2.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ComplementoA2:inst
-ComplementoA2:inst2
-}
-# macro_sequence
-
-# end
-# entity
-Mux2x1-5
-# storage
-db|projetoSD.(9).cnf
-db|projetoSD.(9).cnf
-# case_insensitive
-# source_file
-mux2x1-5.bdf
-6d59b1f691327efa2cc5429c3e67a043
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-mux2x1-5:inst8
-}
 # macro_sequence
 
 # end
 # entity
 Comp2-5
 # storage
-db|projetoSD.(10).cnf
-db|projetoSD.(10).cnf
+db|projetoSD.(9).cnf
+db|projetoSD.(9).cnf
 # case_insensitive
 # source_file
 comp2-5.bdf
@@ -231,8 +175,22 @@ comp2-5.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-comp2-5:inst10
+# macro_sequence
+
+# end
+# entity
+juntar
+# storage
+db|projetoSD.(10).cnf
+db|projetoSD.(10).cnf
+# case_insensitive
+# source_file
+juntar.bdf
+546bff9bf6e4fe89af45c4aa3027e92d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # macro_sequence
 
@@ -240,19 +198,16 @@ comp2-5:inst10
 # entity
 somadorSupremo
 # storage
-db|projetoSD.(1).cnf
-db|projetoSD.(1).cnf
+db|projetoSD.(0).cnf
+db|projetoSD.(0).cnf
 # case_insensitive
 # source_file
 somadorsupremo.bdf
-308a557525f3ea16eef93d12d1ad738f
+afafc04ddb89bc67badf3f4d93b7522
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
