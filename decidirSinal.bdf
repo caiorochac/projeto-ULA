@@ -346,7 +346,7 @@ applicable agreement for further details.
 (symbol
 	(rect 296 -208 432 -80)
 	(text "AmaiorB" (rect 5 0 53 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -389,7 +389,7 @@ applicable agreement for further details.
 (symbol
 	(rect 296 -64 432 64)
 	(text "AmaiorB" (rect 5 0 53 14)(font "Arial" (font_size 8)))
-	(text "inst3" (rect 8 112 31 124)(font "Arial" ))
+	(text "inst2" (rect 8 112 31 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

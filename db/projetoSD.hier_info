@@ -1,53 +1,67 @@
-|AmaiorB
-AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-SinalA => inst1.IN0
-SinalA => inst3.IN0
-SinalA => AigualB:inst12.SinalA
-A[0] => inst20.IN1
-A[0] => AigualB:inst12.A[0]
-A[1] => inst18.IN0
-A[1] => inst19.IN0
-A[1] => AigualB:inst12.A[1]
-A[2] => inst17.IN0
-A[2] => inst14.IN0
-A[2] => AigualB:inst12.A[2]
-A[3] => inst11.IN0
-A[3] => inst10.IN0
-A[3] => AigualB:inst12.A[3]
-B[0] => inst6.IN0
-B[0] => AigualB:inst12.B[0]
-B[1] => inst18.IN1
-B[1] => inst5.IN0
-B[1] => AigualB:inst12.B[1]
-B[2] => inst17.IN1
-B[2] => inst4.IN0
-B[2] => AigualB:inst12.B[2]
-B[3] => inst11.IN1
-B[3] => inst.IN0
-B[3] => AigualB:inst12.B[3]
-SinalB => inst3.IN1
-SinalB => AigualB:inst12.SinalB
+|ComplementoA2
+C[0] <= SomadorCompleto:inst.saida
+C[1] <= SomadorCompleto:inst1.saida
+C[2] <= SomadorCompleto:inst2.saida
+C[3] <= SomadorCompleto:inst3.saida
+A[0] => inst14.IN0
+A[1] => inst15.IN0
+A[2] => inst16.IN0
+A[3] => inst17.IN0
 
 
-|AmaiorB|AigualB:inst12
-S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
-SinalA => inst15.IN0
-SinalB => inst15.IN1
-A[0] => inst7.IN0
-A[0] => inst21.IN5
-A[1] => inst6.IN0
-A[1] => inst21.IN4
-A[2] => inst5.IN0
-A[2] => inst21.IN6
-A[3] => inst.IN0
-A[3] => inst21.IN7
-B[0] => inst7.IN1
-B[0] => inst21.IN0
-B[1] => inst6.IN1
-B[1] => inst21.IN2
-B[2] => inst5.IN1
-B[2] => inst21.IN1
-B[3] => inst.IN1
-B[3] => inst21.IN3
+|ComplementoA2|SomadorCompleto:inst
+carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst5.IN0
+a2 => inst4.IN0
+a2 => inst.IN0
+carry_in => inst5.IN1
+carry_in => inst7.IN1
+carry_in => inst11.IN0
+b2 => inst7.IN0
+b2 => inst4.IN1
+b2 => inst.IN1
+saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ComplementoA2|SomadorCompleto:inst1
+carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst5.IN0
+a2 => inst4.IN0
+a2 => inst.IN0
+carry_in => inst5.IN1
+carry_in => inst7.IN1
+carry_in => inst11.IN0
+b2 => inst7.IN0
+b2 => inst4.IN1
+b2 => inst.IN1
+saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ComplementoA2|SomadorCompleto:inst2
+carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst5.IN0
+a2 => inst4.IN0
+a2 => inst.IN0
+carry_in => inst5.IN1
+carry_in => inst7.IN1
+carry_in => inst11.IN0
+b2 => inst7.IN0
+b2 => inst4.IN1
+b2 => inst.IN1
+saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ComplementoA2|SomadorCompleto:inst3
+carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst5.IN0
+a2 => inst4.IN0
+a2 => inst.IN0
+carry_in => inst5.IN1
+carry_in => inst7.IN1
+carry_in => inst11.IN0
+b2 => inst7.IN0
+b2 => inst4.IN1
+b2 => inst.IN1
+saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 

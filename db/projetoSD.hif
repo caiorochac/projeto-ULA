@@ -20,43 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-decidirSinal
-# storage
-db|projetoSD.(1).cnf
-db|projetoSD.(1).cnf
-# case_insensitive
-# source_file
-decidirsinal.bdf
-6a6ba7e1c31f71c5b925c229a077c93c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-AmaiorB
-# storage
-db|projetoSD.(2).cnf
-db|projetoSD.(2).cnf
-# case_insensitive
-# source_file
-amaiorb.bdf
-e9ce1650575e2681eb3a9dcc69e5f46
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 AigualB
 # storage
 db|projetoSD.(3).cnf
@@ -69,9 +32,6 @@ aigualb.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-AigualB:inst12
 }
 # macro_sequence
 
@@ -124,6 +84,12 @@ somadorcompleto.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# hierarchies {
+SomadorCompleto:inst
+SomadorCompleto:inst1
+SomadorCompleto:inst2
+SomadorCompleto:inst3
+}
 # macro_sequence
 
 # end
@@ -157,6 +123,9 @@ complementoa2.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
@@ -196,14 +165,48 @@ AUTO
 
 # end
 # entity
-somadorSupremo
+AmaiorB
+# storage
+db|projetoSD.(2).cnf
+db|projetoSD.(2).cnf
+# case_insensitive
+# source_file
+amaiorb.bdf
+c9d0497d7ccf987fd0aa3d62b5166d3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+AandB
 # storage
 db|projetoSD.(0).cnf
 db|projetoSD.(0).cnf
 # case_insensitive
 # source_file
-somadorsupremo.bdf
-afafc04ddb89bc67badf3f4d93b7522
+aandb.bdf
+aa5a45fcf7427ac2a1ad2354de9f629
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+axorb
+# storage
+db|projetoSD.(1).cnf
+db|projetoSD.(1).cnf
+# case_insensitive
+# source_file
+axorb.bdf
+f34e422545b346276f1cf2f168af418b
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
