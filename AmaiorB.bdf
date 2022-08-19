@@ -92,7 +92,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1216 -96 1392 -80)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "A>B" (rect 90 0 110 12)(font "Arial" ))
+	(text "AmaiorB" (rect 90 0 131 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
