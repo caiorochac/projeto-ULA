@@ -1,5 +1,5 @@
 Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 11
 918
 OFF
@@ -20,14 +20,232 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-AigualB
+axorb
 # storage
 db|projetoSD.(0).cnf
 db|projetoSD.(0).cnf
 # case_insensitive
 # source_file
+axorb.bdf
+f34e422545b346276f1cf2f168af418b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+decidirSinal
+# storage
+db|projetoSD.(2).cnf
+db|projetoSD.(2).cnf
+# case_insensitive
+# source_file
+decidirsinal.bdf
+6a6ba7e1c31f71c5b925c229a077c93c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decidirSinal:inst1
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorB
+# storage
+db|projetoSD.(3).cnf
+db|projetoSD.(3).cnf
+# case_insensitive
+# source_file
+amaiorb.bdf
+e9ce1650575e2681eb3a9dcc69e5f46
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decidirSinal:inst1|AmaiorB:inst3
+decidirSinal:inst1|AmaiorB:inst2
+}
+# macro_sequence
+
+# end
+# entity
+AigualB
+# storage
+db|projetoSD.(4).cnf
+db|projetoSD.(4).cnf
+# case_insensitive
+# source_file
 aigualb.bdf
 773964f64b46d275369aed02b568d8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decidirSinal:inst1|AmaiorB:inst3|AigualB:inst12
+decidirSinal:inst1|AigualB:inst
+decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
+}
+# macro_sequence
+
+# end
+# entity
+SomaTotal
+# storage
+db|projetoSD.(5).cnf
+db|projetoSD.(5).cnf
+# case_insensitive
+# source_file
+somatotal.bdf
+6465e288d1d6a16f1ab0fbb86af151d6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SomaTotal:inst3
+}
+# macro_sequence
+
+# end
+# entity
+SomadorCompleto
+# storage
+db|projetoSD.(6).cnf
+db|projetoSD.(6).cnf
+# case_insensitive
+# source_file
+somadorcompleto.bdf
+1b1b1ca2d94e24c2bb8572654a33f51
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SomaTotal:inst3|SomadorCompleto:inst
+SomaTotal:inst3|SomadorCompleto:inst4
+SomaTotal:inst3|SomadorCompleto:inst5
+SomaTotal:inst3|SomadorCompleto:inst6
+ComplementoA2:inst|SomadorCompleto:inst
+ComplementoA2:inst|SomadorCompleto:inst1
+ComplementoA2:inst|SomadorCompleto:inst2
+ComplementoA2:inst|SomadorCompleto:inst3
+ComplementoA2:inst2|SomadorCompleto:inst
+ComplementoA2:inst2|SomadorCompleto:inst1
+ComplementoA2:inst2|SomadorCompleto:inst2
+ComplementoA2:inst2|SomadorCompleto:inst3
+comp2-5:inst10|SomadorCompleto:inst
+comp2-5:inst10|SomadorCompleto:inst1
+comp2-5:inst10|SomadorCompleto:inst2
+comp2-5:inst10|SomadorCompleto:inst3
+comp2-5:inst10|SomadorCompleto:inst10
+}
+# macro_sequence
+
+# end
+# entity
+mux2x1
+# storage
+db|projetoSD.(7).cnf
+db|projetoSD.(7).cnf
+# case_insensitive
+# source_file
+mux2x1.bdf
+a5b29bf7b69ebd7fbce9c8609a356d69
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux2x1:inst5
+mux2x1:inst6
+}
+# macro_sequence
+
+# end
+# entity
+ComplementoA2
+# storage
+db|projetoSD.(8).cnf
+db|projetoSD.(8).cnf
+# case_insensitive
+# source_file
+complementoa2.bdf
+5693e89db43ae18c46956cd5f258ae9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComplementoA2:inst
+ComplementoA2:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Mux2x1-5
+# storage
+db|projetoSD.(9).cnf
+db|projetoSD.(9).cnf
+# case_insensitive
+# source_file
+mux2x1-5.bdf
+6d59b1f691327efa2cc5429c3e67a043
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux2x1-5:inst8
+}
+# macro_sequence
+
+# end
+# entity
+Comp2-5
+# storage
+db|projetoSD.(10).cnf
+db|projetoSD.(10).cnf
+# case_insensitive
+# source_file
+comp2-5.bdf
+302eb4999923e3d6882ddf1f9e98c21
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comp2-5:inst10
+}
+# macro_sequence
+
+# end
+# entity
+somadorSupremo
+# storage
+db|projetoSD.(1).cnf
+db|projetoSD.(1).cnf
+# case_insensitive
+# source_file
+somadorsupremo.bdf
+308a557525f3ea16eef93d12d1ad738f
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

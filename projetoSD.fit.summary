@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Aug 19 00:04:48 2022
-Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Fitter Status : Successful - Fri Aug 19 15:30:09 2022
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : projetoSD
-Top-level Entity Name : AigualB
+Top-level Entity Name : somadorSupremo
 Family : Cyclone II
 Device : EP2C5AF256A7
 Timing Models : Final
-Total logic elements : 5 / 4,608 ( < 1 % )
-    Total combinational functions : 5 / 4,608 ( < 1 % )
+Total logic elements : 29 / 4,608 ( < 1 % )
+    Total combinational functions : 29 / 4,608 ( < 1 % )
     Dedicated logic registers : 0 / 4,608 ( 0 % )
 Total registers : 0
-Total pins : 11 / 158 ( 7 % )
+Total pins : 16 / 158 ( 10 % )
 Total virtual pins : 0
 Total memory bits : 0 / 119,808 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )

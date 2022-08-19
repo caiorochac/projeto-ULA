@@ -327,11 +327,6 @@ applicable agreement for further details.
 	(pt 48 328)
 )
 (connector
-	(text "A[2]" (rect 154 328 174 340)(font "Arial" ))
-	(pt 456 344)
-	(pt 144 344)
-)
-(connector
 	(text "A[3]" (rect 58 424 78 436)(font "Arial" ))
 	(pt 456 440)
 	(pt 48 440)
@@ -473,6 +468,11 @@ applicable agreement for further details.
 	(text "C[4]" (rect 610 424 631 436)(font "Arial" ))
 	(pt 600 440)
 	(pt 1032 440)
+)
+(connector
+	(text "B[2]" (rect 154 328 174 340)(font "Arial" ))
+	(pt 456 344)
+	(pt 144 344)
 )
 (junction (pt 48 104))
 (junction (pt 144 120))

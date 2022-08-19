@@ -1,6 +1,6 @@
 Analysis & Synthesis report for projetoSD
-Fri Aug 19 00:04:46 2022
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Fri Aug 19 15:30:07 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -37,24 +37,24 @@ applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                      ;
-+------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 19 00:04:46 2022        ;
-; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
-; Revision Name                      ; projetoSD                                    ;
-; Top-level Entity Name              ; AigualB                                      ;
-; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 5                                            ;
-;     Total combinational functions  ; 5                                            ;
-;     Dedicated logic registers      ; 0                                            ;
-; Total registers                    ; 0                                            ;
-; Total pins                         ; 11                                           ;
-; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 0                                            ;
-; Embedded Multiplier 9-bit elements ; 0                                            ;
-; Total PLLs                         ; 0                                            ;
-+------------------------------------+----------------------------------------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++------------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Aug 19 15:30:07 2022         ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
+; Revision Name                      ; projetoSD                                     ;
+; Top-level Entity Name              ; somadorSupremo                                ;
+; Family                             ; Cyclone II                                    ;
+; Total logic elements               ; 29                                            ;
+;     Total combinational functions  ; 29                                            ;
+;     Dedicated logic registers      ; 0                                             ;
+; Total registers                    ; 0                                             ;
+; Total pins                         ; 16                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 0                                             ;
++------------------------------------+-----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -63,7 +63,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C5AF256A7       ;                    ;
-; Top-level entity name                                                      ; AigualB            ; projetoSD          ;
+; Top-level entity name                                                      ; somadorSupremo     ; projetoSD          ;
 ; Family name                                                                ; Cyclone II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -136,62 +136,92 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                   ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------+
-; AigualB.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/caior/Desktop/projeto-ULA/AigualB.bdf ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------+
+; AigualB.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/AigualB.bdf         ;
+; ComplementoA2.bdf                ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/ComplementoA2.bdf   ;
+; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/mux2x1.bdf          ;
+; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/SomadorCompleto.bdf ;
+; somadorSupremo.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/somadorSupremo.bdf  ;
+; SomaTotal.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/SomaTotal.bdf       ;
+; AmaiorB.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/AmaiorB.bdf         ;
+; decidirSinal.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Users/crc/Desktop/projeto-ULA/decidirSinal.bdf    ;
+; mux2x1-5.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/crc/Desktop/projeto-ULA/mux2x1-5.bdf        ;
+; comp2-5.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/crc/Desktop/projeto-ULA/comp2-5.bdf         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 5        ;
-;                                             ;          ;
-; Total combinational functions               ; 5        ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 4        ;
-;     -- 3 input functions                    ; 0        ;
-;     -- <=2 input functions                  ; 1        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 5        ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 11       ;
-; Maximum fan-out node                        ; inst22~2 ;
-; Maximum fan-out                             ; 2        ;
-; Total fan-out                               ; 19       ;
-; Average fan-out                             ; 1.19     ;
-+---------------------------------------------+----------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 29     ;
+;                                             ;        ;
+; Total combinational functions               ; 29     ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 17     ;
+;     -- 3 input functions                    ; 6      ;
+;     -- <=2 input functions                  ; 6      ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 29     ;
+;     -- arithmetic mode                      ; 0      ;
+;                                             ;        ;
+; Total registers                             ; 0      ;
+;     -- Dedicated logic registers            ; 0      ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 16     ;
+; Maximum fan-out node                        ; sinalA ;
+; Maximum fan-out                             ; 8      ;
+; Total fan-out                               ; 104    ;
+; Average fan-out                             ; 2.31   ;
++---------------------------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |AigualB                   ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |AigualB            ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
+; |somadorSupremo               ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |somadorSupremo                                           ; work         ;
+;    |ComplementoA2:inst2|      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|ComplementoA2:inst2                       ; work         ;
+;       |SomadorCompleto:inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|ComplementoA2:inst2|SomadorCompleto:inst3 ; work         ;
+;    |ComplementoA2:inst|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|ComplementoA2:inst                        ; work         ;
+;       |SomadorCompleto:inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|ComplementoA2:inst|SomadorCompleto:inst3  ; work         ;
+;    |SomaTotal:inst3|          ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|SomaTotal:inst3                           ; work         ;
+;       |SomadorCompleto:inst4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|SomaTotal:inst3|SomadorCompleto:inst4     ; work         ;
+;       |SomadorCompleto:inst5| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|SomaTotal:inst3|SomadorCompleto:inst5     ; work         ;
+;       |SomadorCompleto:inst6| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|SomaTotal:inst3|SomadorCompleto:inst6     ; work         ;
+;       |SomadorCompleto:inst|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|SomaTotal:inst3|SomadorCompleto:inst      ; work         ;
+;    |comp2-5:inst10|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|comp2-5:inst10                            ; work         ;
+;       |SomadorCompleto:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|comp2-5:inst10|SomadorCompleto:inst2      ; work         ;
+;    |decidirSinal:inst1|       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|decidirSinal:inst1                        ;              ;
+;    |mux2x1-5:inst8|           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|mux2x1-5:inst8                            ; work         ;
+;    |mux2x1:inst5|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|mux2x1:inst5                              ; work         ;
+;    |mux2x1:inst6|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somadorSupremo|mux2x1:inst6                              ; work         ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -215,9 +245,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Aug 19 00:04:45 2022
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Fri Aug 19 15:30:06 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projetoSD -c projetoSD
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file aandb.bdf
     Info: Found entity 1: AandB
 Info: Found 1 design units, including 1 entities, in source file aigualb.bdf
@@ -244,14 +275,33 @@ Info: Found 1 design units, including 1 entities, in source file decidirsinal.bd
     Info: Found entity 1: decidirSinal
 Info: Found 1 design units, including 1 entities, in source file operacao.bdf
     Info: Found entity 1: operacao
-Info: Elaborating entity "AigualB" for the top level hierarchy
-Info: Implemented 16 device resources after synthesis - the final resource count might be different
+Info: Found 1 design units, including 1 entities, in source file subtrator.bdf
+    Info: Found entity 1: subtrator
+Warning: Can't analyze file -- file Comp2_5.bdf is missing
+Warning: Can't analyze file -- file Mux2x1_5.bdf is missing
+Info: Elaborating entity "somadorSupremo" for the top level hierarchy
+Info: Elaborating entity "decidirSinal" for hierarchy "decidirSinal:inst1"
+Info: Elaborating entity "AmaiorB" for hierarchy "decidirSinal:inst1|AmaiorB:inst3"
+Info: Elaborating entity "AigualB" for hierarchy "decidirSinal:inst1|AmaiorB:inst3|AigualB:inst12"
+Warning: Using design file mux2x1-5.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: mux2x1-5
+Info: Elaborating entity "Mux2x1-5" for hierarchy "Mux2x1-5:inst8"
+Info: Elaborating entity "SomaTotal" for hierarchy "SomaTotal:inst3"
+Info: Elaborating entity "SomadorCompleto" for hierarchy "SomaTotal:inst3|SomadorCompleto:inst"
+Info: Elaborating entity "mux2x1" for hierarchy "mux2x1:inst5"
+Info: Elaborating entity "ComplementoA2" for hierarchy "ComplementoA2:inst"
+Warning: Primitive "GND" of instance "inst9" not used
+Warning: Using design file comp2-5.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: comp2-5
+Info: Elaborating entity "Comp2-5" for hierarchy "Comp2-5:inst10"
+Warning: Primitive "GND" of instance "inst12" not used
+Info: Implemented 45 device resources after synthesis - the final resource count might be different
     Info: Implemented 10 input pins
-    Info: Implemented 1 output pins
-    Info: Implemented 5 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 222 megabytes
-    Info: Processing ended: Fri Aug 19 00:04:46 2022
+    Info: Implemented 6 output pins
+    Info: Implemented 29 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 226 megabytes
+    Info: Processing ended: Fri Aug 19 15:30:07 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
