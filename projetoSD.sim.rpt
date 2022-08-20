@@ -1,5 +1,5 @@
 Simulator report for projetoSD
-Sat Aug 20 16:04:32 2022
+Sat Aug 20 19:04:56 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 64 nodes     ;
-; Simulation Coverage         ;      95.31 % ;
-; Total Number of Transitions ; 5823         ;
+; Simulation Netlist Size     ; 107 nodes    ;
+; Simulation Coverage         ;      99.07 % ;
+; Total Number of Transitions ; 9113         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                           ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Option                                                                                     ; Setting         ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Simulation mode                                                                            ; Functional      ; Timing        ;
-; Start time                                                                                 ; 0 ns            ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF            ;               ;
-; Vector input source                                                                        ; teste_decod.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
-; Check outputs                                                                              ; Off             ; Off           ;
-; Report simulation coverage                                                                 ; On              ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
-; Display missing 1-value coverage report                                                    ; On              ; On            ;
-; Display missing 0-value coverage report                                                    ; On              ; On            ;
-; Detect setup and hold time violations                                                      ; Off             ; Off           ;
-; Detect glitches                                                                            ; Off             ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
-; Generate Signal Activity File                                                              ; Off             ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
-; Group bus channels in simulation results                                                   ; Off             ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On              ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Option                                                                                     ; Setting              ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Simulation mode                                                                            ; Functional           ; Timing        ;
+; Start time                                                                                 ; 0 ns                 ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                 ;               ;
+; Vector input source                                                                        ; teste_decod5bits.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                   ; On            ;
+; Check outputs                                                                              ; Off                  ; Off           ;
+; Report simulation coverage                                                                 ; On                   ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                   ; On            ;
+; Display missing 1-value coverage report                                                    ; On                   ; On            ;
+; Display missing 0-value coverage report                                                    ; On                   ; On            ;
+; Detect setup and hold time violations                                                      ; Off                  ; Off           ;
+; Detect glitches                                                                            ; Off                  ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                  ; Off           ;
+; Generate Signal Activity File                                                              ; Off                  ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                  ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                  ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                   ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE           ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                  ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                 ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
 
 
 +----------------------+
@@ -94,84 +94,129 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      95.31 % ;
-; Total nodes checked                                 ; 64           ;
-; Total output ports checked                          ; 64           ;
-; Total output ports with complete 1/0-value coverage ; 61           ;
-; Total output ports with no 1/0-value coverage       ; 3            ;
-; Total output ports with no 1-value coverage         ; 3            ;
-; Total output ports with no 0-value coverage         ; 3            ;
+; Total coverage as a percentage                      ;      99.07 % ;
+; Total nodes checked                                 ; 107          ;
+; Total output ports checked                          ; 107          ;
+; Total output ports with complete 1/0-value coverage ; 106          ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                ;
-+----------------------------+----------------------------+------------------+
-; Node Name                  ; Output Port Name           ; Output Port Type ;
-+----------------------------+----------------------------+------------------+
-; |Decodificador4bits|led1   ; |Decodificador4bits|led1   ; pin_out          ;
-; |Decodificador4bits|inst5  ; |Decodificador4bits|inst5  ; out0             ;
-; |Decodificador4bits|A[3]   ; |Decodificador4bits|A[3]   ; out              ;
-; |Decodificador4bits|A[2]   ; |Decodificador4bits|A[2]   ; out              ;
-; |Decodificador4bits|A[1]   ; |Decodificador4bits|A[1]   ; out              ;
-; |Decodificador4bits|A[0]   ; |Decodificador4bits|A[0]   ; out              ;
-; |Decodificador4bits|inst4  ; |Decodificador4bits|inst4  ; out0             ;
-; |Decodificador4bits|led4   ; |Decodificador4bits|led4   ; pin_out          ;
-; |Decodificador4bits|inst7  ; |Decodificador4bits|inst7  ; out0             ;
-; |Decodificador4bits|inst6  ; |Decodificador4bits|inst6  ; out0             ;
-; |Decodificador4bits|led5   ; |Decodificador4bits|led5   ; pin_out          ;
-; |Decodificador4bits|inst9  ; |Decodificador4bits|inst9  ; out0             ;
-; |Decodificador4bits|inst8  ; |Decodificador4bits|inst8  ; out0             ;
-; |Decodificador4bits|led6   ; |Decodificador4bits|led6   ; pin_out          ;
-; |Decodificador4bits|inst13 ; |Decodificador4bits|inst13 ; out0             ;
-; |Decodificador4bits|inst10 ; |Decodificador4bits|inst10 ; out0             ;
-; |Decodificador4bits|led_1  ; |Decodificador4bits|led_1  ; pin_out          ;
-; |Decodificador4bits|inst19 ; |Decodificador4bits|inst19 ; out0             ;
-; |Decodificador4bits|inst15 ; |Decodificador4bits|inst15 ; out0             ;
-; |Decodificador4bits|inst17 ; |Decodificador4bits|inst17 ; out0             ;
-; |Decodificador4bits|inst18 ; |Decodificador4bits|inst18 ; out0             ;
-; |Decodificador4bits|inst16 ; |Decodificador4bits|inst16 ; out0             ;
-; |Decodificador4bits|led_2  ; |Decodificador4bits|led_2  ; pin_out          ;
-; |Decodificador4bits|inst22 ; |Decodificador4bits|inst22 ; out0             ;
-; |Decodificador4bits|inst21 ; |Decodificador4bits|inst21 ; out0             ;
-; |Decodificador4bits|inst24 ; |Decodificador4bits|inst24 ; out0             ;
-; |Decodificador4bits|inst23 ; |Decodificador4bits|inst23 ; out0             ;
-; |Decodificador4bits|led_3  ; |Decodificador4bits|led_3  ; pin_out          ;
-; |Decodificador4bits|inst25 ; |Decodificador4bits|inst25 ; out0             ;
-; |Decodificador4bits|inst28 ; |Decodificador4bits|inst28 ; out0             ;
-; |Decodificador4bits|inst29 ; |Decodificador4bits|inst29 ; out0             ;
-; |Decodificador4bits|inst27 ; |Decodificador4bits|inst27 ; out0             ;
-; |Decodificador4bits|led_4  ; |Decodificador4bits|led_4  ; pin_out          ;
-; |Decodificador4bits|inst30 ; |Decodificador4bits|inst30 ; out0             ;
-; |Decodificador4bits|inst31 ; |Decodificador4bits|inst31 ; out0             ;
-; |Decodificador4bits|inst33 ; |Decodificador4bits|inst33 ; out0             ;
-; |Decodificador4bits|inst32 ; |Decodificador4bits|inst32 ; out0             ;
-; |Decodificador4bits|inst36 ; |Decodificador4bits|inst36 ; out0             ;
-; |Decodificador4bits|inst34 ; |Decodificador4bits|inst34 ; out0             ;
-; |Decodificador4bits|inst35 ; |Decodificador4bits|inst35 ; out0             ;
-; |Decodificador4bits|led_5  ; |Decodificador4bits|led_5  ; pin_out          ;
-; |Decodificador4bits|inst37 ; |Decodificador4bits|inst37 ; out0             ;
-; |Decodificador4bits|inst39 ; |Decodificador4bits|inst39 ; out0             ;
-; |Decodificador4bits|inst40 ; |Decodificador4bits|inst40 ; out0             ;
-; |Decodificador4bits|inst38 ; |Decodificador4bits|inst38 ; out0             ;
-; |Decodificador4bits|led_6  ; |Decodificador4bits|led_6  ; pin_out          ;
-; |Decodificador4bits|inst41 ; |Decodificador4bits|inst41 ; out0             ;
-; |Decodificador4bits|inst42 ; |Decodificador4bits|inst42 ; out0             ;
-; |Decodificador4bits|inst44 ; |Decodificador4bits|inst44 ; out0             ;
-; |Decodificador4bits|inst43 ; |Decodificador4bits|inst43 ; out0             ;
-; |Decodificador4bits|inst45 ; |Decodificador4bits|inst45 ; out0             ;
-; |Decodificador4bits|inst46 ; |Decodificador4bits|inst46 ; out0             ;
-; |Decodificador4bits|inst47 ; |Decodificador4bits|inst47 ; out0             ;
-; |Decodificador4bits|led_7  ; |Decodificador4bits|led_7  ; pin_out          ;
-; |Decodificador4bits|inst49 ; |Decodificador4bits|inst49 ; out0             ;
-; |Decodificador4bits|inst51 ; |Decodificador4bits|inst51 ; out0             ;
-; |Decodificador4bits|inst50 ; |Decodificador4bits|inst50 ; out0             ;
-; |Decodificador4bits|inst53 ; |Decodificador4bits|inst53 ; out0             ;
-; |Decodificador4bits|inst52 ; |Decodificador4bits|inst52 ; out0             ;
-; |Decodificador4bits|inst20 ; |Decodificador4bits|inst20 ; out0             ;
-; |Decodificador4bits|inst48 ; |Decodificador4bits|inst48 ; out0             ;
-+----------------------------+----------------------------+------------------+
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |decodificador5bits|led1    ; |decodificador5bits|led1    ; pin_out          ;
+; |decodificador5bits|inst8   ; |decodificador5bits|inst8   ; out0             ;
+; |decodificador5bits|inst4   ; |decodificador5bits|inst4   ; out0             ;
+; |decodificador5bits|F[4]    ; |decodificador5bits|F[4]    ; out              ;
+; |decodificador5bits|F[3]    ; |decodificador5bits|F[3]    ; out              ;
+; |decodificador5bits|F[2]    ; |decodificador5bits|F[2]    ; out              ;
+; |decodificador5bits|F[1]    ; |decodificador5bits|F[1]    ; out              ;
+; |decodificador5bits|F[0]    ; |decodificador5bits|F[0]    ; out              ;
+; |decodificador5bits|inst6   ; |decodificador5bits|inst6   ; out0             ;
+; |decodificador5bits|inst7   ; |decodificador5bits|inst7   ; out0             ;
+; |decodificador5bits|inst5   ; |decodificador5bits|inst5   ; out0             ;
+; |decodificador5bits|led3    ; |decodificador5bits|led3    ; pin_out          ;
+; |decodificador5bits|inst12  ; |decodificador5bits|inst12  ; out0             ;
+; |decodificador5bits|inst10  ; |decodificador5bits|inst10  ; out0             ;
+; |decodificador5bits|inst11  ; |decodificador5bits|inst11  ; out0             ;
+; |decodificador5bits|led4    ; |decodificador5bits|led4    ; pin_out          ;
+; |decodificador5bits|inst54  ; |decodificador5bits|inst54  ; out0             ;
+; |decodificador5bits|inst14  ; |decodificador5bits|inst14  ; out0             ;
+; |decodificador5bits|inst55  ; |decodificador5bits|inst55  ; out0             ;
+; |decodificador5bits|inst13  ; |decodificador5bits|inst13  ; out0             ;
+; |decodificador5bits|inst26  ; |decodificador5bits|inst26  ; out0             ;
+; |decodificador5bits|led5    ; |decodificador5bits|led5    ; pin_out          ;
+; |decodificador5bits|inst57  ; |decodificador5bits|inst57  ; out0             ;
+; |decodificador5bits|inst59  ; |decodificador5bits|inst59  ; out0             ;
+; |decodificador5bits|inst58  ; |decodificador5bits|inst58  ; out0             ;
+; |decodificador5bits|inst61  ; |decodificador5bits|inst61  ; out0             ;
+; |decodificador5bits|inst60  ; |decodificador5bits|inst60  ; out0             ;
+; |decodificador5bits|led6    ; |decodificador5bits|led6    ; pin_out          ;
+; |decodificador5bits|inst62  ; |decodificador5bits|inst62  ; out0             ;
+; |decodificador5bits|inst64  ; |decodificador5bits|inst64  ; out0             ;
+; |decodificador5bits|inst63  ; |decodificador5bits|inst63  ; out0             ;
+; |decodificador5bits|led7    ; |decodificador5bits|led7    ; pin_out          ;
+; |decodificador5bits|inst67  ; |decodificador5bits|inst67  ; out0             ;
+; |decodificador5bits|inst66  ; |decodificador5bits|inst66  ; out0             ;
+; |decodificador5bits|inst65  ; |decodificador5bits|inst65  ; out0             ;
+; |decodificador5bits|led_1   ; |decodificador5bits|led_1   ; pin_out          ;
+; |decodificador5bits|inst76  ; |decodificador5bits|inst76  ; out0             ;
+; |decodificador5bits|inst68  ; |decodificador5bits|inst68  ; out0             ;
+; |decodificador5bits|inst70  ; |decodificador5bits|inst70  ; out0             ;
+; |decodificador5bits|inst69  ; |decodificador5bits|inst69  ; out0             ;
+; |decodificador5bits|inst72  ; |decodificador5bits|inst72  ; out0             ;
+; |decodificador5bits|inst75  ; |decodificador5bits|inst75  ; out0             ;
+; |decodificador5bits|inst71  ; |decodificador5bits|inst71  ; out0             ;
+; |decodificador5bits|inst74  ; |decodificador5bits|inst74  ; out0             ;
+; |decodificador5bits|inst73  ; |decodificador5bits|inst73  ; out0             ;
+; |decodificador5bits|led_2   ; |decodificador5bits|led_2   ; pin_out          ;
+; |decodificador5bits|inst82  ; |decodificador5bits|inst82  ; out0             ;
+; |decodificador5bits|inst88  ; |decodificador5bits|inst88  ; out0             ;
+; |decodificador5bits|inst79  ; |decodificador5bits|inst79  ; out0             ;
+; |decodificador5bits|inst83  ; |decodificador5bits|inst83  ; out0             ;
+; |decodificador5bits|inst85  ; |decodificador5bits|inst85  ; out0             ;
+; |decodificador5bits|inst84  ; |decodificador5bits|inst84  ; out0             ;
+; |decodificador5bits|inst86  ; |decodificador5bits|inst86  ; out0             ;
+; |decodificador5bits|inst91  ; |decodificador5bits|inst91  ; out0             ;
+; |decodificador5bits|inst89  ; |decodificador5bits|inst89  ; out0             ;
+; |decodificador5bits|inst90  ; |decodificador5bits|inst90  ; out0             ;
+; |decodificador5bits|inst87  ; |decodificador5bits|inst87  ; out0             ;
+; |decodificador5bits|led_3   ; |decodificador5bits|led_3   ; pin_out          ;
+; |decodificador5bits|inst92  ; |decodificador5bits|inst92  ; out0             ;
+; |decodificador5bits|inst94  ; |decodificador5bits|inst94  ; out0             ;
+; |decodificador5bits|inst93  ; |decodificador5bits|inst93  ; out0             ;
+; |decodificador5bits|inst95  ; |decodificador5bits|inst95  ; out0             ;
+; |decodificador5bits|inst96  ; |decodificador5bits|inst96  ; out0             ;
+; |decodificador5bits|inst97  ; |decodificador5bits|inst97  ; out0             ;
+; |decodificador5bits|led_4   ; |decodificador5bits|led_4   ; pin_out          ;
+; |decodificador5bits|inst100 ; |decodificador5bits|inst100 ; out0             ;
+; |decodificador5bits|inst99  ; |decodificador5bits|inst99  ; out0             ;
+; |decodificador5bits|inst110 ; |decodificador5bits|inst110 ; out0             ;
+; |decodificador5bits|inst109 ; |decodificador5bits|inst109 ; out0             ;
+; |decodificador5bits|inst98  ; |decodificador5bits|inst98  ; out0             ;
+; |decodificador5bits|inst101 ; |decodificador5bits|inst101 ; out0             ;
+; |decodificador5bits|inst103 ; |decodificador5bits|inst103 ; out0             ;
+; |decodificador5bits|inst102 ; |decodificador5bits|inst102 ; out0             ;
+; |decodificador5bits|inst104 ; |decodificador5bits|inst104 ; out0             ;
+; |decodificador5bits|inst106 ; |decodificador5bits|inst106 ; out0             ;
+; |decodificador5bits|inst105 ; |decodificador5bits|inst105 ; out0             ;
+; |decodificador5bits|inst107 ; |decodificador5bits|inst107 ; out0             ;
+; |decodificador5bits|inst108 ; |decodificador5bits|inst108 ; out0             ;
+; |decodificador5bits|led_5   ; |decodificador5bits|led_5   ; pin_out          ;
+; |decodificador5bits|inst112 ; |decodificador5bits|inst112 ; out0             ;
+; |decodificador5bits|inst115 ; |decodificador5bits|inst115 ; out0             ;
+; |decodificador5bits|inst113 ; |decodificador5bits|inst113 ; out0             ;
+; |decodificador5bits|inst116 ; |decodificador5bits|inst116 ; out0             ;
+; |decodificador5bits|inst114 ; |decodificador5bits|inst114 ; out0             ;
+; |decodificador5bits|led_6   ; |decodificador5bits|led_6   ; pin_out          ;
+; |decodificador5bits|inst117 ; |decodificador5bits|inst117 ; out0             ;
+; |decodificador5bits|inst118 ; |decodificador5bits|inst118 ; out0             ;
+; |decodificador5bits|inst120 ; |decodificador5bits|inst120 ; out0             ;
+; |decodificador5bits|inst119 ; |decodificador5bits|inst119 ; out0             ;
+; |decodificador5bits|inst121 ; |decodificador5bits|inst121 ; out0             ;
+; |decodificador5bits|inst123 ; |decodificador5bits|inst123 ; out0             ;
+; |decodificador5bits|inst122 ; |decodificador5bits|inst122 ; out0             ;
+; |decodificador5bits|inst125 ; |decodificador5bits|inst125 ; out0             ;
+; |decodificador5bits|inst124 ; |decodificador5bits|inst124 ; out0             ;
+; |decodificador5bits|led_7   ; |decodificador5bits|led_7   ; pin_out          ;
+; |decodificador5bits|inst129 ; |decodificador5bits|inst129 ; out0             ;
+; |decodificador5bits|inst136 ; |decodificador5bits|inst136 ; out0             ;
+; |decodificador5bits|inst126 ; |decodificador5bits|inst126 ; out0             ;
+; |decodificador5bits|inst130 ; |decodificador5bits|inst130 ; out0             ;
+; |decodificador5bits|inst132 ; |decodificador5bits|inst132 ; out0             ;
+; |decodificador5bits|inst131 ; |decodificador5bits|inst131 ; out0             ;
+; |decodificador5bits|inst133 ; |decodificador5bits|inst133 ; out0             ;
+; |decodificador5bits|inst134 ; |decodificador5bits|inst134 ; out0             ;
+; |decodificador5bits|inst135 ; |decodificador5bits|inst135 ; out0             ;
+; |decodificador5bits|inst56  ; |decodificador5bits|inst56  ; out0             ;
+; |decodificador5bits|inst111 ; |decodificador5bits|inst111 ; out0             ;
++-----------------------------+-----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -180,9 +225,7 @@ The following table displays output ports that do not toggle to 1 during simulat
 +--------------------------+--------------------------+------------------+
 ; Node Name                ; Output Port Name         ; Output Port Type ;
 +--------------------------+--------------------------+------------------+
-; |Decodificador4bits|led2 ; |Decodificador4bits|led2 ; pin_out          ;
-; |Decodificador4bits|led3 ; |Decodificador4bits|led3 ; pin_out          ;
-; |Decodificador4bits|led7 ; |Decodificador4bits|led7 ; pin_out          ;
+; |decodificador5bits|led2 ; |decodificador5bits|led2 ; pin_out          ;
 +--------------------------+--------------------------+------------------+
 
 
@@ -192,9 +235,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 +--------------------------+--------------------------+------------------+
 ; Node Name                ; Output Port Name         ; Output Port Type ;
 +--------------------------+--------------------------+------------------+
-; |Decodificador4bits|led2 ; |Decodificador4bits|led2 ; pin_out          ;
-; |Decodificador4bits|led3 ; |Decodificador4bits|led3 ; pin_out          ;
-; |Decodificador4bits|led7 ; |Decodificador4bits|led7 ; pin_out          ;
+; |decodificador5bits|led2 ; |decodificador5bits|led2 ; pin_out          ;
 +--------------------------+--------------------------+------------------+
 
 
@@ -211,21 +252,21 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Aug 20 16:04:32 2022
+    Info: Processing started: Sat Aug 20 19:04:55 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off projetoSD -c projetoSD
-Info: Using vector source file "C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/teste_decod.vwf"
+Info: Using vector source file "C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/teste_decod5bits.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of teste_decod.vwf called projetoSD.sim_ori.vwf has been created in the db folder
+    Info: A backup of teste_decod5bits.vwf called projetoSD.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      95.31 %
-Info: Number of transitions in simulation is 5823
-Info: Vector file teste_decod.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Simulation coverage is      99.07 %
+Info: Number of transitions in simulation is 9113
+Info: Vector file teste_decod5bits.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 150 megabytes
-    Info: Processing ended: Sat Aug 20 16:04:32 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sat Aug 20 19:04:56 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
