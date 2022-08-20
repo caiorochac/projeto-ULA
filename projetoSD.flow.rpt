@@ -1,5 +1,5 @@
 Flow report for projetoSD
-Sat Aug 20 13:35:00 2022
+Sat Aug 20 13:48:44 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,23 +38,23 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Sat Aug 20 13:35:00 2022        ;
+; Flow Status                        ; Successful - Sat Aug 20 13:48:44 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; projetoSD                                    ;
 ; Top-level Entity Name              ; ULA                                          ;
 ; Family                             ; Cyclone II                                   ;
-; Device                             ; EP2C5AF256A7                                 ;
+; Device                             ; EP2C70F896C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; Yes                                          ;
-; Total logic elements               ; 89 / 4,608 ( 2 % )                           ;
-;     Total combinational functions  ; 89 / 4,608 ( 2 % )                           ;
-;     Dedicated logic registers      ; 0 / 4,608 ( 0 % )                            ;
+; Total logic elements               ; 89 / 68,416 ( < 1 % )                        ;
+;     Total combinational functions  ; 89 / 68,416 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 0 / 68,416 ( 0 % )                           ;
 ; Total registers                    ; 0                                            ;
-; Total pins                         ; 20 / 158 ( 13 % )                            ;
+; Total pins                         ; 20 / 622 ( 3 % )                             ;
 ; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 0 / 119,808 ( 0 % )                          ;
-; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                               ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                                ;
+; Total memory bits                  ; 0 / 1,152,000 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                ;
 +------------------------------------+----------------------------------------------+
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/20/2022 13:34:55 ;
+; Start date & time ; 08/20/2022 13:48:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; projetoSD           ;
 +-------------------+---------------------+
@@ -74,9 +74,9 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                            ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 136935936955477.166101329408776                  ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 125                                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; -40                                              ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 136935936955477.166101411111184                  ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                               ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; C:/Users/caior/Desktop/projeto-ULA/projetoSD.dpf ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                                         ; --            ; ULA         ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                                           ; --            ; ULA         ; Top            ;
@@ -90,11 +90,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 220 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 244 MB              ; 00:00:01                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 209 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 172 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 222 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:07     ; 1.0                     ; 380 MB              ; 00:00:06                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 345 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 177 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:11     ; --                      ; --                  ; 00:00:10                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

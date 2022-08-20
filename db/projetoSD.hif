@@ -1,7 +1,7 @@
 Quartus II
 Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 11
-918
+1040
 OFF
 OFF
 OFF
@@ -20,10 +20,117 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-AigualB
+ULA
+# storage
+db|projetoSD.(0).cnf
+db|projetoSD.(0).cnf
+# case_insensitive
+# source_file
+ula.bdf
+f12c157e789bdb4c2df3485635c9c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Mux5x1
+# storage
+db|projetoSD.(1).cnf
+db|projetoSD.(1).cnf
+# case_insensitive
+# source_file
+mux5x1.bdf
+df8cce24ee5c850638b5115d26b558
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux5x1:inst11
+}
+# macro_sequence
+
+# end
+# entity
+somadorSupremo
+# storage
+db|projetoSD.(2).cnf
+db|projetoSD.(2).cnf
+# case_insensitive
+# source_file
+somadorsupremo.bdf
+d92aaf2b2079e16c2b2c28836922dfe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+somadorSupremo:inst
+subtrator:inst4|somadorSupremo:inst
+}
+# macro_sequence
+
+# end
+# entity
+decidirSinal
 # storage
 db|projetoSD.(3).cnf
 db|projetoSD.(3).cnf
+# case_insensitive
+# source_file
+decidirsinal.bdf
+9f153b2475e9aed6cc9a5618be074
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+somadorSupremo:inst|decidirSinal:inst1
+subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorB
+# storage
+db|projetoSD.(4).cnf
+db|projetoSD.(4).cnf
+# case_insensitive
+# source_file
+amaiorb.bdf
+c9d0497d7ccf987fd0aa3d62b5166d3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
+somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
+subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
+subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
+AmaiorB:inst9
+AmaiorB:inst10
+}
+# macro_sequence
+
+# end
+# entity
+AigualB
+# storage
+db|projetoSD.(5).cnf
+db|projetoSD.(5).cnf
 # case_insensitive
 # source_file
 aigualb.bdf
@@ -48,10 +155,34 @@ AmaiorB:inst10|AigualB:inst12
 
 # end
 # entity
+juntar
+# storage
+db|projetoSD.(6).cnf
+db|projetoSD.(6).cnf
+# case_insensitive
+# source_file
+juntar.bdf
+546bff9bf6e4fe89af45c4aa3027e92d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+somadorSupremo:inst|juntar:inst13
+subtrator:inst4|somadorSupremo:inst|juntar:inst13
+juntar:inst17
+juntar:inst19
+juntar:inst18
+}
+# macro_sequence
+
+# end
+# entity
 Mux2x1-5
 # storage
-db|projetoSD.(4).cnf
-db|projetoSD.(4).cnf
+db|projetoSD.(7).cnf
+db|projetoSD.(7).cnf
 # case_insensitive
 # source_file
 mux2x1-5.bdf
@@ -71,8 +202,8 @@ subtrator:inst4|somadorSupremo:inst|mux2x1-5:inst8
 # entity
 SomaTotal
 # storage
-db|projetoSD.(5).cnf
-db|projetoSD.(5).cnf
+db|projetoSD.(8).cnf
+db|projetoSD.(8).cnf
 # case_insensitive
 # source_file
 somatotal.bdf
@@ -92,8 +223,8 @@ subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3
 # entity
 SomadorCompleto
 # storage
-db|projetoSD.(6).cnf
-db|projetoSD.(6).cnf
+db|projetoSD.(9).cnf
+db|projetoSD.(9).cnf
 # case_insensitive
 # source_file
 somadorcompleto.bdf
@@ -149,8 +280,8 @@ ComplementoA2:inst5|SomadorCompleto:inst3
 # entity
 mux2x1
 # storage
-db|projetoSD.(7).cnf
-db|projetoSD.(7).cnf
+db|projetoSD.(10).cnf
+db|projetoSD.(10).cnf
 # case_insensitive
 # source_file
 mux2x1.bdf
@@ -172,8 +303,8 @@ subtrator:inst4|somadorSupremo:inst|mux2x1:inst6
 # entity
 ComplementoA2
 # storage
-db|projetoSD.(8).cnf
-db|projetoSD.(8).cnf
+db|projetoSD.(11).cnf
+db|projetoSD.(11).cnf
 # case_insensitive
 # source_file
 complementoa2.bdf
@@ -196,8 +327,8 @@ ComplementoA2:inst5
 # entity
 Comp2-5
 # storage
-db|projetoSD.(9).cnf
-db|projetoSD.(9).cnf
+db|projetoSD.(12).cnf
+db|projetoSD.(12).cnf
 # case_insensitive
 # source_file
 comp2-5.bdf
@@ -215,50 +346,21 @@ subtrator:inst4|somadorSupremo:inst|comp2-5:inst10
 
 # end
 # entity
-juntar
+subtrator
 # storage
-db|projetoSD.(10).cnf
-db|projetoSD.(10).cnf
+db|projetoSD.(13).cnf
+db|projetoSD.(13).cnf
 # case_insensitive
 # source_file
-juntar.bdf
-546bff9bf6e4fe89af45c4aa3027e92d
+subtrator.bdf
+662f2b62b43ecd33a84fdbd163b445c9
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-somadorSupremo:inst|juntar:inst13
-subtrator:inst4|somadorSupremo:inst|juntar:inst13
-juntar:inst17
-juntar:inst19
-juntar:inst18
-}
-# macro_sequence
-
-# end
-# entity
-AmaiorB
-# storage
-db|projetoSD.(2).cnf
-db|projetoSD.(2).cnf
-# case_insensitive
-# source_file
-amaiorb.bdf
-c9d0497d7ccf987fd0aa3d62b5166d3
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
-somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
-subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
-subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
-AmaiorB:inst9
-AmaiorB:inst10
+subtrator:inst4
 }
 # macro_sequence
 
@@ -266,8 +368,8 @@ AmaiorB:inst10
 # entity
 AandB
 # storage
-db|projetoSD.(0).cnf
-db|projetoSD.(0).cnf
+db|projetoSD.(14).cnf
+db|projetoSD.(14).cnf
 # case_insensitive
 # source_file
 aandb.bdf
@@ -286,8 +388,8 @@ AandB:inst6
 # entity
 axorb
 # storage
-db|projetoSD.(1).cnf
-db|projetoSD.(1).cnf
+db|projetoSD.(15).cnf
+db|projetoSD.(15).cnf
 # case_insensitive
 # source_file
 axorb.bdf
@@ -304,30 +406,10 @@ axorb:inst7
 
 # end
 # entity
-Mux5x1
-# storage
-db|projetoSD.(11).cnf
-db|projetoSD.(11).cnf
-# case_insensitive
-# source_file
-mux5x1.bdf
-df8cce24ee5c850638b5115d26b558
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Mux5x1:inst11
-}
-# macro_sequence
-
-# end
-# entity
 Mux3x1
 # storage
-db|projetoSD.(12).cnf
-db|projetoSD.(12).cnf
+db|projetoSD.(16).cnf
+db|projetoSD.(16).cnf
 # case_insensitive
 # source_file
 mux3x1.bdf
@@ -339,88 +421,6 @@ AUTO
 }
 # hierarchies {
 Mux3x1:inst12
-}
-# macro_sequence
-
-# end
-# entity
-ULA
-# storage
-db|projetoSD.(13).cnf
-db|projetoSD.(13).cnf
-# case_insensitive
-# source_file
-ula.bdf
-f12c157e789bdb4c2df3485635c9c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-somadorSupremo
-# storage
-db|projetoSD.(14).cnf
-db|projetoSD.(14).cnf
-# case_insensitive
-# source_file
-somadorsupremo.bdf
-d92aaf2b2079e16c2b2c28836922dfe
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-somadorSupremo:inst
-subtrator:inst4|somadorSupremo:inst
-}
-# macro_sequence
-
-# end
-# entity
-decidirSinal
-# storage
-db|projetoSD.(15).cnf
-db|projetoSD.(15).cnf
-# case_insensitive
-# source_file
-decidirsinal.bdf
-9f153b2475e9aed6cc9a5618be074
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-somadorSupremo:inst|decidirSinal:inst1
-subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1
-}
-# macro_sequence
-
-# end
-# entity
-subtrator
-# storage
-db|projetoSD.(16).cnf
-db|projetoSD.(16).cnf
-# case_insensitive
-# source_file
-subtrator.bdf
-662f2b62b43ecd33a84fdbd163b445c9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-subtrator:inst4
 }
 # macro_sequence
 
