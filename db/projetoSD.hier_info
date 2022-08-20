@@ -1,4 +1,63 @@
-|ULA
+|projeto
+Sinal <= ULA:inst.Sinal
+SinalA => ULA:inst.SinalA
+SinalB => ULA:inst.SinalB
+S2 => ULA:inst.S2
+S1 => ULA:inst.S1
+S0 => ULA:inst.S0
+A[0] => ULA:inst.A[0]
+A[0] => Decodificador4bits:inst1.A[0]
+A[1] => ULA:inst.A[1]
+A[1] => Decodificador4bits:inst1.A[1]
+A[2] => ULA:inst.A[2]
+A[2] => Decodificador4bits:inst1.A[2]
+A[3] => ULA:inst.A[3]
+A[3] => Decodificador4bits:inst1.A[3]
+B[0] => ULA:inst.B[0]
+B[0] => Decodificador4bits:inst2.A[0]
+B[1] => ULA:inst.B[1]
+B[1] => Decodificador4bits:inst2.A[1]
+B[2] => ULA:inst.B[2]
+B[2] => Decodificador4bits:inst2.A[2]
+B[3] => ULA:inst.B[3]
+B[3] => Decodificador4bits:inst2.A[3]
+Status <= ULA:inst.Status
+led1 <= Decodificador4bits:inst1.led1
+led2 <= Decodificador4bits:inst1.led2
+led3 <= Decodificador4bits:inst1.led3
+led4 <= Decodificador4bits:inst1.led4
+led5 <= Decodificador4bits:inst1.led5
+led6 <= Decodificador4bits:inst1.led6
+led7 <= Decodificador4bits:inst1.led7
+led_1 <= Decodificador4bits:inst1.led_1
+led_2 <= Decodificador4bits:inst1.led_2
+led_3 <= Decodificador4bits:inst1.led_3
+led_4 <= Decodificador4bits:inst1.led_4
+led_5 <= Decodificador4bits:inst1.led_5
+led_6 <= Decodificador4bits:inst1.led_6
+led_7 <= Decodificador4bits:inst1.led_7
+led8 <= Decodificador4bits:inst2.led1
+led9 <= Decodificador4bits:inst2.led2
+led10 <= Decodificador4bits:inst2.led3
+led11 <= Decodificador4bits:inst2.led4
+led12 <= Decodificador4bits:inst2.led5
+led13 <= Decodificador4bits:inst2.led6
+led14 <= Decodificador4bits:inst2.led7
+led_8 <= Decodificador4bits:inst2.led_1
+led_9 <= Decodificador4bits:inst2.led_2
+led_10 <= Decodificador4bits:inst2.led_3
+led_11 <= Decodificador4bits:inst2.led_4
+led_12 <= Decodificador4bits:inst2.led_5
+led_13 <= Decodificador4bits:inst2.led_6
+led_14 <= Decodificador4bits:inst2.led_7
+F[0] <= ULA:inst.F[0]
+F[1] <= ULA:inst.F[1]
+F[2] <= ULA:inst.F[2]
+F[3] <= ULA:inst.F[3]
+F[4] <= ULA:inst.F[4]
+
+
+|projeto|ULA:inst
 Sinal <= Mux5x1:inst11.Sinal
 S1 => Mux5x1:inst11.S1
 S1 => Mux3x1:inst12.S1
@@ -89,7 +148,7 @@ F[3] <= Mux5x1:inst11.F[3]
 F[4] <= Mux5x1:inst11.F[4]
 
 
-|ULA|Mux5x1:inst11
+|projeto|ULA:inst|Mux5x1:inst11
 Sinal <= inst35.DB_MAX_OUTPUT_PORT_TYPE
 S2 => inst.IN0
 S2 => inst10.IN0
@@ -173,7 +232,7 @@ E[3] => inst13.IN3
 E[4] => inst4.IN3
 
 
-|ULA|somadorSupremo:inst
+|projeto|ULA:inst|somadorSupremo:inst
 Sinal <= decidirSinal:inst1.Sinal
 sinalA => decidirSinal:inst1.SinalA
 sinalA => mux2x1:inst5.chave
@@ -212,7 +271,7 @@ S[3] <= juntar:inst13.S[3]
 S[4] <= juntar:inst13.S[4]
 
 
-|ULA|somadorSupremo:inst|decidirSinal:inst1
+|projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst1
 Sinal <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 B[0] => AmaiorB:inst2.A[0]
 B[0] => AigualB:inst.B[0]
@@ -244,7 +303,7 @@ SinalA => inst13.IN1
 SinalA => inst9.IN1
 
 
-|ULA|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
+|projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
 AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst1.IN0
 SinalA => inst16.IN0
@@ -275,7 +334,7 @@ SinalB => inst13.IN0
 SinalB => AigualB:inst12.SinalB
 
 
-|ULA|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
+|projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -297,7 +356,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|somadorSupremo:inst|decidirSinal:inst1|AigualB:inst
+|projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AigualB:inst
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -319,7 +378,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
+|projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
 AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst1.IN0
 SinalA => inst16.IN0
@@ -350,7 +409,7 @@ SinalB => inst13.IN0
 SinalB => AigualB:inst12.SinalB
 
 
-|ULA|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1|AigualB:inst12
+|projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1|AigualB:inst12
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -372,7 +431,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|somadorSupremo:inst|juntar:inst13
+|projeto|ULA:inst|somadorSupremo:inst|juntar:inst13
 S[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
@@ -385,7 +444,7 @@ A3 => S[3].DATAIN
 A4 => S[4].DATAIN
 
 
-|ULA|somadorSupremo:inst|Mux2x1-5:inst8
+|projeto|ULA:inst|somadorSupremo:inst|Mux2x1-5:inst8
 S[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -409,7 +468,7 @@ A[3] => inst10.IN0
 A[4] => inst16.IN0
 
 
-|ULA|somadorSupremo:inst|SomaTotal:inst3
+|projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst4.saida
 C[2] <= SomadorCompleto:inst5.saida
@@ -425,7 +484,7 @@ B[2] => SomadorCompleto:inst5.b2
 B[3] => SomadorCompleto:inst6.b2
 
 
-|ULA|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst
+|projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -439,7 +498,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4
+|projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -453,7 +512,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5
+|projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -467,7 +526,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6
+|projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -481,7 +540,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|mux2x1:inst5
+|projeto|ULA:inst|somadorSupremo:inst|mux2x1:inst5
 S[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -501,7 +560,7 @@ A[2] => inst8.IN0
 A[3] => inst10.IN0
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -512,7 +571,7 @@ A[2] => inst16.IN0
 A[3] => inst17.IN0
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -526,7 +585,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst1
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -540,7 +599,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst2
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -554,7 +613,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -568,7 +627,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|mux2x1:inst6
+|projeto|ULA:inst|somadorSupremo:inst|mux2x1:inst6
 S[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -588,7 +647,7 @@ A[2] => inst8.IN0
 A[3] => inst10.IN0
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst2
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -599,7 +658,7 @@ A[2] => inst16.IN0
 A[3] => inst17.IN0
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -613,7 +672,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst1
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -627,7 +686,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -641,7 +700,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3
+|projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -655,7 +714,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|Comp2-5:inst10
+|projeto|ULA:inst|somadorSupremo:inst|Comp2-5:inst10
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -668,7 +727,7 @@ A[3] => inst17.IN0
 A[4] => inst18.IN0
 
 
-|ULA|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst
+|projeto|ULA:inst|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -682,7 +741,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst1
+|projeto|ULA:inst|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -696,7 +755,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst2
+|projeto|ULA:inst|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -710,7 +769,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst3
+|projeto|ULA:inst|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -724,7 +783,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst10
+|projeto|ULA:inst|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst10
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -738,7 +797,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4
+|projeto|ULA:inst|subtrator:inst4
 SinalS <= somadorSupremo:inst.Sinal
 SinalA => somadorSupremo:inst.sinalA
 SinalB => inst4.IN0
@@ -757,7 +816,7 @@ S[3] <= somadorSupremo:inst.S[3]
 S[4] <= somadorSupremo:inst.S[4]
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst
 Sinal <= decidirSinal:inst1.Sinal
 sinalA => decidirSinal:inst1.SinalA
 sinalA => mux2x1:inst5.chave
@@ -796,7 +855,7 @@ S[3] <= juntar:inst13.S[3]
 S[4] <= juntar:inst13.S[4]
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1
 Sinal <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 B[0] => AmaiorB:inst2.A[0]
 B[0] => AigualB:inst.B[0]
@@ -828,7 +887,7 @@ SinalA => inst13.IN1
 SinalA => inst9.IN1
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
 AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst1.IN0
 SinalA => inst16.IN0
@@ -859,7 +918,7 @@ SinalB => inst13.IN0
 SinalB => AigualB:inst12.SinalB
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -881,7 +940,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AigualB:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AigualB:inst
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -903,7 +962,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
 AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst1.IN0
 SinalA => inst16.IN0
@@ -934,7 +993,7 @@ SinalB => inst13.IN0
 SinalB => AigualB:inst12.SinalB
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1|AigualB:inst12
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1|AigualB:inst12
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -956,7 +1015,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|juntar:inst13
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|juntar:inst13
 S[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
@@ -969,7 +1028,7 @@ A3 => S[3].DATAIN
 A4 => S[4].DATAIN
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Mux2x1-5:inst8
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Mux2x1-5:inst8
 S[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -993,7 +1052,7 @@ A[3] => inst10.IN0
 A[4] => inst16.IN0
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst4.saida
 C[2] <= SomadorCompleto:inst5.saida
@@ -1009,7 +1068,7 @@ B[2] => SomadorCompleto:inst5.b2
 B[3] => SomadorCompleto:inst6.b2
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1023,7 +1082,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1037,7 +1096,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1051,7 +1110,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1065,7 +1124,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|mux2x1:inst5
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|mux2x1:inst5
 S[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -1085,7 +1144,7 @@ A[2] => inst8.IN0
 A[3] => inst10.IN0
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -1096,7 +1155,7 @@ A[2] => inst16.IN0
 A[3] => inst17.IN0
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1110,7 +1169,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst1
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1124,7 +1183,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst2
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1138,7 +1197,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1152,7 +1211,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|mux2x1:inst6
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|mux2x1:inst6
 S[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
@@ -1172,7 +1231,7 @@ A[2] => inst8.IN0
 A[3] => inst10.IN0
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -1183,7 +1242,7 @@ A[2] => inst16.IN0
 A[3] => inst17.IN0
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1197,7 +1256,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst1
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1211,7 +1270,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1225,7 +1284,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1239,7 +1298,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -1252,7 +1311,7 @@ A[3] => inst17.IN0
 A[4] => inst18.IN0
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1266,7 +1325,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst1
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1280,7 +1339,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst2
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1294,7 +1353,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst3
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1308,7 +1367,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst10
+|projeto|ULA:inst|subtrator:inst4|somadorSupremo:inst|Comp2-5:inst10|SomadorCompleto:inst10
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1322,7 +1381,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|AandB:inst6
+|projeto|ULA:inst|AandB:inst6
 SinalS <= and0.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => and0.IN0
 SinalB => and0.IN1
@@ -1340,7 +1399,7 @@ B[2] => and2.IN1
 B[3] => and1.IN1
 
 
-|ULA|axorb:inst7
+|projeto|ULA:inst|axorb:inst7
 SinalS <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 SinalB => inst7.IN0
 SinalA => inst7.IN1
@@ -1358,7 +1417,7 @@ A[2] => inst5.IN1
 A[3] => inst6.IN1
 
 
-|ULA|juntar:inst17
+|projeto|ULA:inst|juntar:inst17
 S[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1371,7 +1430,7 @@ A3 => S[3].DATAIN
 A4 => S[4].DATAIN
 
 
-|ULA|ComplementoA2:inst5
+|projeto|ULA:inst|ComplementoA2:inst5
 C[0] <= SomadorCompleto:inst.saida
 C[1] <= SomadorCompleto:inst1.saida
 C[2] <= SomadorCompleto:inst2.saida
@@ -1382,7 +1441,7 @@ A[2] => inst16.IN0
 A[3] => inst17.IN0
 
 
-|ULA|ComplementoA2:inst5|SomadorCompleto:inst
+|projeto|ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1396,7 +1455,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|ComplementoA2:inst5|SomadorCompleto:inst1
+|projeto|ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst1
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1410,7 +1469,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|ComplementoA2:inst5|SomadorCompleto:inst2
+|projeto|ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst2
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1424,7 +1483,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|ComplementoA2:inst5|SomadorCompleto:inst3
+|projeto|ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst3
 carrout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 a2 => inst5.IN0
 a2 => inst4.IN0
@@ -1438,7 +1497,7 @@ b2 => inst.IN1
 saida <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ULA|juntar:inst19
+|projeto|ULA:inst|juntar:inst19
 S[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1451,7 +1510,7 @@ A3 => S[3].DATAIN
 A4 => S[4].DATAIN
 
 
-|ULA|juntar:inst18
+|projeto|ULA:inst|juntar:inst18
 S[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1464,7 +1523,7 @@ A3 => S[3].DATAIN
 A4 => S[4].DATAIN
 
 
-|ULA|Mux3x1:inst12
+|projeto|ULA:inst|Mux3x1:inst12
 pin_name <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S2 => inst9.IN0
 S2 => inst10.IN0
@@ -1479,7 +1538,7 @@ AmenorB => inst10.IN3
 AigualB => inst8.IN3
 
 
-|ULA|AigualB:inst8
+|projeto|ULA:inst|AigualB:inst8
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -1501,7 +1560,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|AmaiorB:inst9
+|projeto|ULA:inst|AmaiorB:inst9
 AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst1.IN0
 SinalA => inst16.IN0
@@ -1532,7 +1591,7 @@ SinalB => inst13.IN0
 SinalB => AigualB:inst12.SinalB
 
 
-|ULA|AmaiorB:inst9|AigualB:inst12
+|projeto|ULA:inst|AmaiorB:inst9|AigualB:inst12
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -1554,7 +1613,7 @@ B[3] => inst.IN1
 B[3] => inst21.IN3
 
 
-|ULA|AmaiorB:inst10
+|projeto|ULA:inst|AmaiorB:inst10
 AmaiorB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst1.IN0
 SinalA => inst16.IN0
@@ -1585,7 +1644,7 @@ SinalB => inst13.IN0
 SinalB => AigualB:inst12.SinalB
 
 
-|ULA|AmaiorB:inst10|AigualB:inst12
+|projeto|ULA:inst|AmaiorB:inst10|AigualB:inst12
 S <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 SinalA => inst15.IN0
 SinalB => inst15.IN1
@@ -1605,5 +1664,121 @@ B[2] => inst5.IN1
 B[2] => inst21.IN1
 B[3] => inst.IN1
 B[3] => inst21.IN3
+
+
+|projeto|Decodificador4bits:inst1
+led1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[0] => inst18.IN1
+A[0] => inst24.IN2
+A[0] => inst25.IN0
+A[0] => inst36.IN2
+A[0] => inst34.IN2
+A[1] => inst1.IN0
+A[1] => inst16.IN1
+A[1] => inst24.IN1
+A[1] => inst29.IN1
+A[1] => inst33.IN1
+A[1] => inst35.IN2
+A[1] => inst39.IN1
+A[1] => inst43.IN2
+A[1] => inst46.IN1
+A[1] => inst47.IN1
+A[1] => inst53.IN2
+A[2] => inst2.IN0
+A[2] => inst18.IN0
+A[2] => inst29.IN0
+A[2] => inst36.IN0
+A[2] => inst34.IN1
+A[2] => inst42.IN1
+A[2] => inst43.IN1
+A[2] => inst46.IN0
+A[2] => inst49.IN1
+A[2] => inst51.IN0
+A[2] => inst50.IN0
+A[3] => inst3.IN0
+A[3] => inst17.IN0
+A[3] => inst22.IN0
+A[3] => inst23.IN0
+A[3] => inst27.IN0
+A[3] => inst31.IN0
+A[3] => inst34.IN0
+A[3] => inst40.IN0
+A[3] => inst44.IN0
+A[3] => inst43.IN0
+A[3] => inst47.IN0
+A[3] => inst49.IN0
+A[3] => inst52.IN0
+led2 <= <VCC>
+led3 <= <VCC>
+led4 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+led5 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+led6 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+led7 <= <GND>
+led_1 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+led_2 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+led_3 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+led_4 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+led_5 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+led_6 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+led_7 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|Decodificador4bits:inst2
+led1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[0] => inst18.IN1
+A[0] => inst24.IN2
+A[0] => inst25.IN0
+A[0] => inst36.IN2
+A[0] => inst34.IN2
+A[1] => inst1.IN0
+A[1] => inst16.IN1
+A[1] => inst24.IN1
+A[1] => inst29.IN1
+A[1] => inst33.IN1
+A[1] => inst35.IN2
+A[1] => inst39.IN1
+A[1] => inst43.IN2
+A[1] => inst46.IN1
+A[1] => inst47.IN1
+A[1] => inst53.IN2
+A[2] => inst2.IN0
+A[2] => inst18.IN0
+A[2] => inst29.IN0
+A[2] => inst36.IN0
+A[2] => inst34.IN1
+A[2] => inst42.IN1
+A[2] => inst43.IN1
+A[2] => inst46.IN0
+A[2] => inst49.IN1
+A[2] => inst51.IN0
+A[2] => inst50.IN0
+A[3] => inst3.IN0
+A[3] => inst17.IN0
+A[3] => inst22.IN0
+A[3] => inst23.IN0
+A[3] => inst27.IN0
+A[3] => inst31.IN0
+A[3] => inst34.IN0
+A[3] => inst40.IN0
+A[3] => inst44.IN0
+A[3] => inst43.IN0
+A[3] => inst47.IN0
+A[3] => inst49.IN0
+A[3] => inst52.IN0
+led2 <= <VCC>
+led3 <= <VCC>
+led4 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+led5 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+led6 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+led7 <= <GND>
+led_1 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+led_2 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+led_3 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+led_4 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+led_5 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+led_6 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+led_7 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
 
 
