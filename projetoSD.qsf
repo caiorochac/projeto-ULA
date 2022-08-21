@@ -36,8 +36,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name DEVICE EP2C70F896C6
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY projeto
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:15:59  AUGUST 17, 2022"
@@ -58,7 +58,6 @@ set_global_assignment -name BDF_FILE SomaTotal.bdf
 set_global_assignment -name BDF_FILE subAmenosB.bdf
 set_global_assignment -name BDF_FILE AmaiorB.bdf
 set_global_assignment -name BDF_FILE decidirSinal.bdf
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_WAVEFORM_FILE teste.vwf
 set_global_assignment -name BDF_FILE operacao.bdf
@@ -81,26 +80,6 @@ set_global_assignment -name BDF_FILE Mux3x1.bdf
 set_global_assignment -name BDF_FILE ULA.bdf
 set_global_assignment -name BDF_FILE projeto.bdf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_AB26 -to A[3]
-set_location_assignment PIN_AA23 -to SinalA
-set_location_assignment PIN_AB25 -to A[2]
-set_location_assignment PIN_AC27 -to A[1]
-set_location_assignment PIN_AC26 -to A[0]
-set_location_assignment PIN_AC23 -to SinalB
-set_location_assignment PIN_AD25 -to B[3]
-set_location_assignment PIN_AD24 -to B[2]
-set_location_assignment PIN_AE27 -to B[1]
-set_location_assignment PIN_W5 -to B[0]
-set_location_assignment PIN_U9 -to S2
-set_location_assignment PIN_T9 -to S1
-set_location_assignment PIN_L5 -to S0
-set_location_assignment PIN_AK5 -to F[4]
-set_location_assignment PIN_AJ5 -to F[3]
-set_location_assignment PIN_AJ4 -to F[2]
-set_location_assignment PIN_AK3 -to F[1]
-set_location_assignment PIN_AH4 -to F[0]
-set_location_assignment PIN_AJ6 -to Sinal
-set_location_assignment PIN_AJ2 -to Status
 set_global_assignment -name MISC_FILE "C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/projetoSD.dpf"
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
@@ -110,24 +89,54 @@ set_global_assignment -name BDF_FILE decodificador5bits.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE teste_decod5bits.vwf
 set_global_assignment -name BDF_FILE apagar.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE testeGeral.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_somador.vwf
 set_global_assignment -name BDF_FILE AmaiorBmagnitude.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_location_assignment PIN_G18 -to led_15
+set_location_assignment PIN_F22 -to led_16
+set_location_assignment PIN_E17 -to led_17
+set_location_assignment PIN_L26 -to led_18
+set_location_assignment PIN_L25 -to led_19
+set_location_assignment PIN_J22 -to led_20
+set_location_assignment PIN_H22 -to led_21
+set_location_assignment PIN_M24 -to led15
+set_location_assignment PIN_Y22 -to led16
+set_location_assignment PIN_W21 -to led17
+set_location_assignment PIN_W22 -to led18
+set_location_assignment PIN_W25 -to led19
+set_location_assignment PIN_U23 -to led20
+set_location_assignment PIN_U24 -to led21
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_GeralSomador000.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_GeralSomador000.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_location_assignment PIN_AG13 -to led_15
-set_location_assignment PIN_AE16 -to led_16
-set_location_assignment PIN_AF16 -to led_17
-set_location_assignment PIN_AG16 -to led_18
-set_location_assignment PIN_AE17 -to led_19
-set_location_assignment PIN_AF17 -to led_20
-set_location_assignment PIN_AD17 -to led_21
-set_location_assignment PIN_AE8 -to led15
-set_location_assignment PIN_AF9 -to led16
-set_location_assignment PIN_AH9 -to led17
-set_location_assignment PIN_AD10 -to led18
-set_location_assignment PIN_AF10 -to led19
-set_location_assignment PIN_AD11 -to led20
-set_location_assignment PIN_AD12 -to led21
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_location_assignment PIN_AD17 -to led1
+set_location_assignment PIN_AE17 -to led2
+set_location_assignment PIN_AG17 -to led3
+set_location_assignment PIN_AH17 -to led4
+set_location_assignment PIN_AF17 -to led5
+set_location_assignment PIN_AG18 -to led6
+set_location_assignment PIN_AA14 -to led7
+set_location_assignment PIN_AD18 -to led8
+set_location_assignment PIN_AC18 -to led9
+set_location_assignment PIN_AA17 -to led_1
+set_location_assignment PIN_AB18 -to led10
+set_location_assignment PIN_AH19 -to led11
+set_location_assignment PIN_AG19 -to led12
+set_location_assignment PIN_AF18 -to led13
+set_location_assignment PIN_AH18 -to led14
+set_location_assignment PIN_AB16 -to led_2
+set_location_assignment PIN_AA16 -to led_3
+set_location_assignment PIN_AB17 -to led_4
+set_location_assignment PIN_AB15 -to led_5
+set_location_assignment PIN_AA15 -to led_6
+set_location_assignment PIN_AC17 -to led_7
+set_location_assignment PIN_AB19 -to led_8
+set_location_assignment PIN_AA19 -to led_9
+set_location_assignment PIN_AG21 -to led_10
+set_location_assignment PIN_AH21 -to led_11
+set_location_assignment PIN_AE19 -to led_12
+set_location_assignment PIN_AF19 -to led_13
+set_location_assignment PIN_AE18 -to led_14

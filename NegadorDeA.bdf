@@ -58,7 +58,7 @@ applicable agreement for further details.
 	(output)
 	(rect 800 0 816 176)
 	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
-	(text "~A[4..0]" (rect 0 5 12 43)(font "Arial" )(vertical))
+	(text "B[4..0]" (rect 0 5 12 38)(font "Arial" )(vertical))
 	(pt 8 176)
 	(drawing
 		(line (pt 8 176)(pt 8 124)(line_width 1))
@@ -331,44 +331,24 @@ applicable agreement for further details.
 	(pt 32 536)
 )
 (connector
-	(pt 280 208)
-	(pt 808 208)
-)
-(connector
 	(pt 808 176)
 	(pt 808 208)
 	(bus)
 )
 (connector
-	(pt 280 288)
-	(pt 808 288)
-)
-(connector
 	(pt 808 208)
 	(pt 808 288)
 	(bus)
 )
 (connector
-	(pt 280 376)
-	(pt 808 376)
-)
-(connector
 	(pt 808 288)
 	(pt 808 376)
 	(bus)
 )
 (connector
-	(pt 280 464)
-	(pt 808 464)
-)
-(connector
 	(pt 808 376)
 	(pt 808 464)
 	(bus)
-)
-(connector
-	(pt 280 544)
-	(pt 808 544)
 )
 (connector
 	(pt 808 464)
@@ -379,6 +359,31 @@ applicable agreement for further details.
 	(pt 808 544)
 	(pt 808 640)
 	(bus)
+)
+(connector
+	(text "B[4]" (rect 290 192 310 204)(font "Arial" ))
+	(pt 280 208)
+	(pt 808 208)
+)
+(connector
+	(text "B[3]" (rect 290 272 310 284)(font "Arial" ))
+	(pt 280 288)
+	(pt 808 288)
+)
+(connector
+	(text "B[2]" (rect 290 360 310 372)(font "Arial" ))
+	(pt 280 376)
+	(pt 808 376)
+)
+(connector
+	(text "B[1]" (rect 290 448 310 460)(font "Arial" ))
+	(pt 280 464)
+	(pt 808 464)
+)
+(connector
+	(text "B[0]" (rect 290 528 310 540)(font "Arial" ))
+	(pt 280 544)
+	(pt 808 544)
 )
 (junction (pt 32 200))
 (junction (pt 80 216))

@@ -356,67 +356,6 @@ ULA:inst|Mux3x1:inst12
 
 # end
 # entity
-Decodificador4bits
-# storage
-db|projetoSD.(17).cnf
-db|projetoSD.(17).cnf
-# case_insensitive
-# source_file
-decodificador4bits.bdf
-73656ed91124f9a53417f0909fa1bebb
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Decodificador4bits:inst1
-Decodificador4bits:inst2
-}
-# macro_sequence
-
-# end
-# entity
-decodificador5bits
-# storage
-db|projetoSD.(19).cnf
-db|projetoSD.(19).cnf
-# case_insensitive
-# source_file
-decodificador5bits.bdf
-99f64cf535bfd28e4b2a135575cb14
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-decodificador5bits:inst18
-}
-# macro_sequence
-
-# end
-# entity
-projeto
-# storage
-db|projetoSD.(0).cnf
-db|projetoSD.(0).cnf
-# case_insensitive
-# source_file
-projeto.bdf
-5655ff602ec8ce352739a17feefaa01
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 somadorSupremo
 # storage
 db|projetoSD.(2).cnf
@@ -497,6 +436,87 @@ AUTO
 }
 # hierarchies {
 ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+Decodificador4bits
+# storage
+db|projetoSD.(17).cnf
+db|projetoSD.(17).cnf
+# case_insensitive
+# source_file
+decodificador4bits.bdf
+f1d75c18b9c73868d86ba44301c2712
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador4bits:inst7
+Decodificador4bits:inst6
+}
+# macro_sequence
+
+# end
+# entity
+decodificador5bits
+# storage
+db|projetoSD.(19).cnf
+db|projetoSD.(19).cnf
+# case_insensitive
+# source_file
+decodificador5bits.bdf
+78e7ef1b88ffe6ffc574efaf272d31c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decodificador5bits:inst4
+}
+# macro_sequence
+
+# end
+# entity
+projeto
+# storage
+db|projetoSD.(0).cnf
+db|projetoSD.(0).cnf
+# case_insensitive
+# source_file
+projeto.bdf
+25932f97df3a20e2ff7550514c31516b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+negadordea
+# storage
+db|projetoSD.(21).cnf
+db|projetoSD.(21).cnf
+# case_insensitive
+# source_file
+negadordea.bdf
+b4d2444b42e9bd0fafefc1b6c675c7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+negadordea:inst8
 }
 # macro_sequence
 
