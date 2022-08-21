@@ -908,6 +908,32 @@ applicable agreement for further details.
 	)
 	(rotate180)
 )
+(symbol
+	(rect 552 -688 584 -640)
+	(text "NOT" (rect 0 27 10 47)(font "Arial" (font_size 6))(vertical))
+	(text "inst3" (rect 21 22 33 45)(font "Arial" )(vertical))
+	(port
+		(pt 16 48)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 7 35 19 46)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 48)(pt 16 35)(line_width 1))
+	)
+	(port
+		(pt 16 0)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 7 -1 19 16)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 9)(pt 16 0)(line_width 1))
+	)
+	(drawing
+		(line (pt 25 35)(pt 7 35)(line_width 1))
+		(line (pt 7 35)(pt 16 17)(line_width 1))
+		(line (pt 25 35)(pt 16 17)(line_width 1))
+		(circle (rect 12 9 20 17)(line_width 1))
+	)
+	(rotate90)
+)
 (connector
 	(pt 320 -840)
 	(pt 160 -840)
@@ -1698,10 +1724,6 @@ applicable agreement for further details.
 	(pt 784 -720)
 )
 (connector
-	(pt 568 -720)
-	(pt 568 -624)
-)
-(connector
 	(pt 568 -624)
 	(pt 120 -624)
 )
@@ -1732,6 +1754,14 @@ applicable agreement for further details.
 (connector
 	(pt 456 -616)
 	(pt 648 -616)
+)
+(connector
+	(pt 568 -640)
+	(pt 568 -624)
+)
+(connector
+	(pt 568 -688)
+	(pt 568 -720)
 )
 (junction (pt 160 -840))
 (junction (pt 72 -872))
