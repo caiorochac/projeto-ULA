@@ -33,30 +33,6 @@ df8cce24ee5c850638b5115d26b558
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Mux5x1:inst11
-}
-# macro_sequence
-
-# end
-# entity
-somadorSupremo
-# storage
-db|projetoSD.(2).cnf
-db|projetoSD.(2).cnf
-# case_insensitive
-# source_file
-somadorsupremo.bdf
-d92aaf2b2079e16c2b2c28836922dfe
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst|somadorSupremo:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst
-}
 # macro_sequence
 
 # end
@@ -73,14 +49,6 @@ c9d0497d7ccf987fd0aa3d62b5166d3
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
-ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1
-ULA:inst|AmaiorB:inst9
-ULA:inst|AmaiorB:inst10
 }
 # macro_sequence
 
@@ -100,15 +68,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
-ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AigualB:inst
-ULA:inst|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1|AigualB:inst12
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst2|AigualB:inst12
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst1|AigualB:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst1|AmaiorB:inst1|AigualB:inst12
-ULA:inst|AigualB:inst8
-ULA:inst|AmaiorB:inst9|AigualB:inst12
-ULA:inst|AmaiorB:inst10|AigualB:inst12
+decidirSinal:inst19|AigualB:inst
 }
 # macro_sequence
 
@@ -128,11 +88,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|juntar:inst13
-ULA:inst|subtrator:inst1|somadorSupremo:inst|juntar:inst13
-ULA:inst|juntar:inst17
-ULA:inst|juntar:inst19
-ULA:inst|juntar:inst18
+juntar:inst13
 }
 # macro_sequence
 
@@ -152,8 +108,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|mux2x1-5:inst8
-ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1-5:inst8
+mux2x1-5:inst8
 }
 # macro_sequence
 
@@ -173,8 +128,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|SomaTotal:inst3
-ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3
+SomaTotal:inst3
 }
 # macro_sequence
 
@@ -194,44 +148,23 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst
-ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4
-ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5
-ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst1
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst2
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst1
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3
-ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst
-ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst1
-ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst2
-ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst3
-ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst10
-ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4
-ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5
-ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst1
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst2
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst1
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3
-ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst1
-ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst2
-ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst3
-ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst10
-ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst
-ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst1
-ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst2
-ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst3
+SomaTotal:inst3|SomadorCompleto:inst
+SomaTotal:inst3|SomadorCompleto:inst4
+SomaTotal:inst3|SomadorCompleto:inst5
+SomaTotal:inst3|SomadorCompleto:inst6
+ComplementoA2:inst|SomadorCompleto:inst
+ComplementoA2:inst|SomadorCompleto:inst1
+ComplementoA2:inst|SomadorCompleto:inst2
+ComplementoA2:inst|SomadorCompleto:inst3
+ComplementoA2:inst2|SomadorCompleto:inst
+ComplementoA2:inst2|SomadorCompleto:inst1
+ComplementoA2:inst2|SomadorCompleto:inst2
+ComplementoA2:inst2|SomadorCompleto:inst3
+comp2-5:inst10|SomadorCompleto:inst
+comp2-5:inst10|SomadorCompleto:inst1
+comp2-5:inst10|SomadorCompleto:inst2
+comp2-5:inst10|SomadorCompleto:inst3
+comp2-5:inst10|SomadorCompleto:inst10
 }
 # macro_sequence
 
@@ -251,10 +184,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|mux2x1:inst5
-ULA:inst|somadorSupremo:inst|mux2x1:inst6
-ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1:inst5
-ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1:inst6
+mux2x1:inst5
+mux2x1:inst6
 }
 # macro_sequence
 
@@ -274,11 +205,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst
-ULA:inst|somadorSupremo:inst|ComplementoA2:inst2
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst|ComplementoA2:inst2
-ULA:inst|ComplementoA2:inst5
+ComplementoA2:inst
+ComplementoA2:inst2
 }
 # macro_sequence
 
@@ -298,8 +226,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|comp2-5:inst10
-ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10
+comp2-5:inst10
 }
 # macro_sequence
 
@@ -318,9 +245,6 @@ subtrator.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|subtrator:inst1
-}
 # macro_sequence
 
 # end
@@ -337,9 +261,6 @@ aa5a45fcf7427ac2a1ad2354de9f629
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|AandB:inst6
 }
 # macro_sequence
 
@@ -358,9 +279,6 @@ f34e422545b346276f1cf2f168af418b
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|axorb:inst7
-}
 # macro_sequence
 
 # end
@@ -377,9 +295,6 @@ mux3x1.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|Mux3x1:inst12
 }
 # macro_sequence
 
@@ -398,10 +313,6 @@ decodificador4bits.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Decodificador4bits:inst1
-Decodificador4bits:inst2
-}
 # macro_sequence
 
 # end
@@ -418,9 +329,6 @@ decodificador5bits.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-decodificador5bits:inst18
 }
 # macro_sequence
 
@@ -439,9 +347,6 @@ projeto.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -459,8 +364,25 @@ ula.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+somadorSupremo
+# storage
+db|projetoSD.(2).cnf
+db|projetoSD.(2).cnf
+# case_insensitive
+# source_file
+somadorsupremo.bdf
+34969f40aaa4699dc1e11b8311ba057
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-ULA:inst
+|
 }
 # macro_sequence
 
@@ -473,15 +395,35 @@ db|projetoSD.(18).cnf
 # case_insensitive
 # source_file
 decidirsinal.bdf
-2e3cc27ef49696ffa0fba6906c8f4a33
+3278bb55f9f118418d8a1b5dddaa4376
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|decidirSinal:inst1
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst1
+decidirSinal:inst19
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorBmagnitude
+# storage
+db|projetoSD.(20).cnf
+db|projetoSD.(20).cnf
+# case_insensitive
+# source_file
+amaiorbmagnitude.bdf
+b246c57b4ceabfa54152ad3f93299
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decidirSinal:inst19|AmaiorBmagnitude:inst2
+decidirSinal:inst19|AmaiorBmagnitude:inst1
 }
 # macro_sequence
 
