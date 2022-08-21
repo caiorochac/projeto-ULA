@@ -46,50 +46,12 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name MISC_FILE "C:/Users/caior/Desktop/projeto-ULA/projetoSD.dpf"
-set_global_assignment -name BDF_FILE AandB.bdf
-set_global_assignment -name BDF_FILE AigualB.bdf
-set_global_assignment -name BDF_FILE axorb.bdf
-set_global_assignment -name BDF_FILE ComplementoA2.bdf
-set_global_assignment -name BDF_FILE mux2x1.bdf
-set_global_assignment -name BDF_FILE Mux8x1.bdf
-set_global_assignment -name BDF_FILE SomadorCompleto.bdf
-set_global_assignment -name BDF_FILE somadorSupremo.bdf
-set_global_assignment -name BDF_FILE SomaTotal.bdf
-set_global_assignment -name BDF_FILE subAmenosB.bdf
-set_global_assignment -name BDF_FILE AmaiorB.bdf
-set_global_assignment -name BDF_FILE decidirSinal.bdf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste.vwf
-set_global_assignment -name BDF_FILE operacao.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste1.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste2.vwf
-set_global_assignment -name BDF_FILE subtrator.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_somador.vwf
-set_global_assignment -name BDF_FILE Comp2_5.bdf
-set_global_assignment -name BDF_FILE Mux2x1_5.bdf
-set_global_assignment -name BDF_FILE juntar.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_subtrator.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AmaiorB.vwf
 set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AigualB.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AandB.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AxorB.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_compA.vwf
-set_global_assignment -name BDF_FILE Mux5x1.bdf
-set_global_assignment -name BDF_FILE Mux3x1.bdf
-set_global_assignment -name BDF_FILE ULA.bdf
-set_global_assignment -name BDF_FILE projeto.bdf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name MISC_FILE "C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/projetoSD.dpf"
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
-set_global_assignment -name BDF_FILE Decodificador4bits.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_decod.vwf
-set_global_assignment -name BDF_FILE decodificador5bits.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_decod5bits.vwf
-set_global_assignment -name BDF_FILE apagar.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE testeGeral.vwf
-set_global_assignment -name BDF_FILE AmaiorBmagnitude.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
@@ -108,7 +70,6 @@ set_location_assignment PIN_W22 -to led18
 set_location_assignment PIN_W25 -to led19
 set_location_assignment PIN_U23 -to led20
 set_location_assignment PIN_U24 -to led21
-set_global_assignment -name VECTOR_WAVEFORM_FILE teste_GeralSomador000.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_GeralSomador000.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
@@ -140,3 +101,42 @@ set_location_assignment PIN_AH21 -to led_11
 set_location_assignment PIN_AE19 -to led_12
 set_location_assignment PIN_AF19 -to led_13
 set_location_assignment PIN_AE18 -to led_14
+set_global_assignment -name BDF_FILE AandB.bdf
+set_global_assignment -name BDF_FILE AmaiorB.bdf
+set_global_assignment -name BDF_FILE AigualB.bdf
+set_global_assignment -name BDF_FILE axorb.bdf
+set_global_assignment -name BDF_FILE ComplementoA2.bdf
+set_global_assignment -name BDF_FILE mux2x1.bdf
+set_global_assignment -name BDF_FILE Mux8x1.bdf
+set_global_assignment -name BDF_FILE SomadorCompleto.bdf
+set_global_assignment -name BDF_FILE somadorSupremo.bdf
+set_global_assignment -name BDF_FILE SomaTotal.bdf
+set_global_assignment -name BDF_FILE subAmenosB.bdf
+set_global_assignment -name BDF_FILE decidirSinal.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste.vwf
+set_global_assignment -name BDF_FILE operacao.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste2.vwf
+set_global_assignment -name BDF_FILE subtrator.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_somador.vwf
+set_global_assignment -name BDF_FILE Comp2_5.bdf
+set_global_assignment -name BDF_FILE Mux2x1_5.bdf
+set_global_assignment -name BDF_FILE juntar.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_subtrator.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AmaiorB.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AigualB.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AandB.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_AxorB.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_compA.vwf
+set_global_assignment -name BDF_FILE Mux5x1.bdf
+set_global_assignment -name BDF_FILE Mux3x1.bdf
+set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name BDF_FILE projeto.bdf
+set_global_assignment -name BDF_FILE Decodificador4bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_decod.vwf
+set_global_assignment -name BDF_FILE decodificador5bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_decod5bits.vwf
+set_global_assignment -name BDF_FILE apagar.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE testeGeral.vwf
+set_global_assignment -name BDF_FILE AmaiorBmagnitude.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_GeralSomador000.vwf
