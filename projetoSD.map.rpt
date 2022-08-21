@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projetoSD
-Sun Aug 21 12:59:51 2022
+Sun Aug 21 15:42:46 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,13 +40,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 21 12:59:51 2022        ;
+; Analysis & Synthesis Status        ; Successful - Sun Aug 21 15:42:46 2022        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; projetoSD                                    ;
 ; Top-level Entity Name              ; projeto                                      ;
-; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 154                                          ;
-;     Total combinational functions  ; 154                                          ;
+; Family                             ; Cyclone IV E                                 ;
+; Total logic elements               ; 146                                          ;
+;     Total combinational functions  ; 146                                          ;
 ;     Dedicated logic registers      ; 0                                            ;
 ; Total registers                    ; 0                                            ;
 ; Total pins                         ; 62                                           ;
@@ -62,9 +62,9 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP2C70F896C6       ;                    ;
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                                      ; projeto            ; projetoSD          ;
-; Family name                                                                ; Cyclone II         ; Stratix II         ;
+; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -103,11 +103,13 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -115,7 +117,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
 ; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
@@ -142,68 +144,68 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                        ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+
-; AandB.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/AandB.bdf              ;
-; AigualB.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/AigualB.bdf            ;
-; axorb.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/axorb.bdf              ;
-; ComplementoA2.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/ComplementoA2.bdf      ;
-; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/mux2x1.bdf             ;
-; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/SomadorCompleto.bdf    ;
-; somadorSupremo.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/somadorSupremo.bdf     ;
-; SomaTotal.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/SomaTotal.bdf          ;
-; AmaiorB.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/AmaiorB.bdf            ;
-; decidirSinal.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/decidirSinal.bdf       ;
-; subtrator.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/subtrator.bdf          ;
-; juntar.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/juntar.bdf             ;
-; Mux5x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/Mux5x1.bdf             ;
-; Mux3x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/Mux3x1.bdf             ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/ULA.bdf                ;
-; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/projeto.bdf            ;
-; Decodificador4bits.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/Decodificador4bits.bdf ;
-; decodificador5bits.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/decodificador5bits.bdf ;
-; AmaiorBmagnitude.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/AmaiorBmagnitude.bdf   ;
-; mux2x1-5.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/mux2x1-5.bdf           ;
-; comp2-5.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/comp2-5.bdf            ;
-; negadordea.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/ASUS/Desktop/Projeto SD/projeto-ULA/negadordea.bdf         ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                              ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+
+; AandB.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/AandB.bdf              ;
+; AmaiorB.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/AmaiorB.bdf            ;
+; AigualB.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/AigualB.bdf            ;
+; axorb.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/axorb.bdf              ;
+; ComplementoA2.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/ComplementoA2.bdf      ;
+; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/mux2x1.bdf             ;
+; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/SomadorCompleto.bdf    ;
+; somadorSupremo.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/somadorSupremo.bdf     ;
+; SomaTotal.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/SomaTotal.bdf          ;
+; decidirSinal.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/decidirSinal.bdf       ;
+; subtrator.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/subtrator.bdf          ;
+; juntar.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/juntar.bdf             ;
+; Mux5x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/Mux5x1.bdf             ;
+; Mux3x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/Mux3x1.bdf             ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/ULA.bdf                ;
+; projeto.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/projeto.bdf            ;
+; Decodificador4bits.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/Decodificador4bits.bdf ;
+; decodificador5bits.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/decodificador5bits.bdf ;
+; AmaiorBmagnitude.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/caior/Desktop/projeto-ULA/AmaiorBmagnitude.bdf   ;
+; mux2x1-5.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/caior/Desktop/projeto-ULA/mux2x1-5.bdf           ;
+; comp2-5.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/caior/Desktop/projeto-ULA/comp2-5.bdf            ;
+; negadordea.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/caior/Desktop/projeto-ULA/negadordea.bdf         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 154   ;
-;                                             ;       ;
-; Total combinational functions               ; 154   ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 118   ;
-;     -- 3 input functions                    ; 21    ;
-;     -- <=2 input functions                  ; 15    ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 154   ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 62    ;
-; Maximum fan-out node                        ; B[0]  ;
-; Maximum fan-out                             ; 23    ;
-; Total fan-out                               ; 607   ;
-; Average fan-out                             ; 2.81  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 146        ;
+;                                             ;            ;
+; Total combinational functions               ; 146        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 103        ;
+;     -- 3 input functions                    ; 29         ;
+;     -- <=2 input functions                  ; 14         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 146        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 62         ;
+; Maximum fan-out node                        ; B[0]~input ;
+; Maximum fan-out                             ; 23         ;
+; Total fan-out                               ; 631        ;
+; Average fan-out                             ; 2.34       ;
++---------------------------------------------+------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,14 +213,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                         ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+--------------+
-; |projeto                               ; 154 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |projeto                                                                                    ; work         ;
+; |projeto                               ; 146 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |projeto                                                                                    ; work         ;
 ;    |Decodificador4bits:inst6|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|Decodificador4bits:inst6                                                           ; work         ;
 ;    |Decodificador4bits:inst7|          ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|Decodificador4bits:inst7                                                           ; work         ;
-;    |ULA:inst|                          ; 91 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst                                                                           ;              ;
-;       |Mux3x1:inst12|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|Mux3x1:inst12                                                             ; work         ;
+;    |ULA:inst|                          ; 90 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst                                                                           ;              ;
+;       |Mux3x1:inst12|                  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|Mux3x1:inst12                                                             ; work         ;
 ;       |Mux5x1:inst11|                  ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|Mux5x1:inst11                                                             ;              ;
-;       |somadorSupremo:inst|            ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst                                                       ;              ;
-;          |ComplementoA2:inst2|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2                                   ;              ;
+;       |somadorSupremo:inst|            ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst                                                       ;              ;
+;          |ComplementoA2:inst2|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2                                   ;              ;
+;             |SomadorCompleto:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst2             ;              ;
 ;             |SomadorCompleto:inst3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst2|SomadorCompleto:inst3             ;              ;
 ;          |ComplementoA2:inst|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst                                    ;              ;
 ;             |SomadorCompleto:inst3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|ComplementoA2:inst|SomadorCompleto:inst3              ;              ;
@@ -226,28 +229,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |SomadorCompleto:inst4|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4                 ;              ;
 ;             |SomadorCompleto:inst5|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5                 ;              ;
 ;             |SomadorCompleto:inst6|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6                 ;              ;
-;          |comp2-5:inst10|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|comp2-5:inst10                                        ;              ;
+;          |comp2-5:inst10|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|comp2-5:inst10                                        ;              ;
 ;             |SomadorCompleto:inst1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst1                  ;              ;
-;             |SomadorCompleto:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst2                  ;              ;
-;          |decidirSinal:inst19|         ; 13 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst19                                   ;              ;
-;             |AigualB:inst|             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AigualB:inst                      ;              ;
+;          |decidirSinal:inst19|         ; 14 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst19                                   ;              ;
+;             |AigualB:inst|             ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AigualB:inst                      ;              ;
 ;             |AmaiorBmagnitude:inst1|   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst1            ;              ;
 ;             |AmaiorBmagnitude:inst2|   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst2            ;              ;
 ;          |mux2x1:inst5|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|mux2x1:inst5                                          ;              ;
 ;          |mux2x1:inst6|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|somadorSupremo:inst|mux2x1:inst6                                          ;              ;
-;       |subtrator:inst1|                ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1                                                           ;              ;
-;          |somadorSupremo:inst|         ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst                                       ;              ;
-;             |SomaTotal:inst3|          ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3                       ; work         ;
-;                |SomadorCompleto:inst4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4 ; work         ;
-;                |SomadorCompleto:inst5| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5 ; work         ;
-;                |SomadorCompleto:inst6| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6 ; work         ;
-;                |SomadorCompleto:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst  ; work         ;
-;             |comp2-5:inst10|           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10                        ; work         ;
-;                |SomadorCompleto:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst2  ; work         ;
+;       |subtrator:inst1|                ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1                                                           ;              ;
+;          |somadorSupremo:inst|         ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst                                       ;              ;
+;             |SomaTotal:inst3|          ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3                       ;              ;
+;                |SomadorCompleto:inst4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst4 ;              ;
+;                |SomadorCompleto:inst5| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst5 ;              ;
+;                |SomadorCompleto:inst6| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst6 ;              ;
+;                |SomadorCompleto:inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3|SomadorCompleto:inst  ;              ;
+;             |comp2-5:inst10|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10                        ;              ;
+;                |SomadorCompleto:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10|SomadorCompleto:inst2  ;              ;
 ;             |decidirSinal:inst19|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19                   ;              ;
-;             |mux2x1:inst6|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1:inst6                          ; work         ;
-;    |decodificador5bits:inst4|          ; 41 (41)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|decodificador5bits:inst4                                                           ; work         ;
-;    |negadordea:inst8|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|negadordea:inst8                                                                   ; work         ;
+;             |mux2x1:inst6|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1:inst6                          ;              ;
+;    |decodificador5bits:inst4|          ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|decodificador5bits:inst4                                                           ; work         ;
+;    |negadordea:inst8|                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |projeto|negadordea:inst8                                                                   ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -273,10 +275,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Aug 21 12:59:46 2022
+    Info: Processing started: Sun Aug 21 15:42:42 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projetoSD -c projetoSD
 Info: Found 1 design units, including 1 entities, in source file aandb.bdf
     Info: Found entity 1: AandB
+Info: Found 1 design units, including 1 entities, in source file amaiorb.bdf
+    Info: Found entity 1: AmaiorB
 Info: Found 1 design units, including 1 entities, in source file aigualb.bdf
     Info: Found entity 1: AigualB
 Info: Found 1 design units, including 1 entities, in source file axorb.bdf
@@ -293,8 +297,6 @@ Info: Found 1 design units, including 1 entities, in source file somadorsupremo.
 Info: Found 1 design units, including 1 entities, in source file somatotal.bdf
     Info: Found entity 1: SomaTotal
 Warning: Can't analyze file -- file subAmenosB.bdf is missing
-Info: Found 1 design units, including 1 entities, in source file amaiorb.bdf
-    Info: Found entity 1: AmaiorB
 Info: Found 1 design units, including 1 entities, in source file decidirsinal.bdf
     Info: Found entity 1: decidirSinal
 Info: Found 1 design units, including 1 entities, in source file operacao.bdf
@@ -358,14 +360,15 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "led10" is stuck at GND
     Warning (13410): Pin "led14" is stuck at VCC
     Warning (13410): Pin "led16" is stuck at GND
-Info: Implemented 216 device resources after synthesis - the final resource count might be different
+Info: Timing-Driven Synthesis is running
+Info: Implemented 208 device resources after synthesis - the final resource count might be different
     Info: Implemented 13 input pins
     Info: Implemented 49 output pins
-    Info: Implemented 154 logic cells
+    Info: Implemented 146 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Sun Aug 21 12:59:51 2022
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Sun Aug 21 15:42:46 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

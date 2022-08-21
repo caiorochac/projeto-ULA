@@ -1,7 +1,7 @@
 Quartus II
 Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-11
-1040
+12
+1222
 OFF
 OFF
 OFF
@@ -20,10 +20,50 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Mux5x1
+projeto
+# storage
+db|projetoSD.(0).cnf
+db|projetoSD.(0).cnf
+# case_insensitive
+# source_file
+projeto.bdf
+85372565fb952d145a2a43bd0fd3b0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+ULA
 # storage
 db|projetoSD.(1).cnf
 db|projetoSD.(1).cnf
+# case_insensitive
+# source_file
+ula.bdf
+7269d8a5eaf675bd14154fd864d909
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+Mux5x1
+# storage
+db|projetoSD.(2).cnf
+db|projetoSD.(2).cnf
 # case_insensitive
 # source_file
 mux5x1.bdf
@@ -40,22 +80,66 @@ ULA:inst|Mux5x1:inst11
 
 # end
 # entity
-AmaiorB
+somadorSupremo
 # storage
-db|projetoSD.(4).cnf
-db|projetoSD.(4).cnf
+db|projetoSD.(3).cnf
+db|projetoSD.(3).cnf
 # case_insensitive
 # source_file
-amaiorb.bdf
-c9d0497d7ccf987fd0aa3d62b5166d3
+somadorsupremo.bdf
+34969f40aaa4699dc1e11b8311ba057
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|AmaiorB:inst9
-ULA:inst|AmaiorB:inst10
+ULA:inst|somadorSupremo:inst
+ULA:inst|subtrator:inst1|somadorSupremo:inst
+}
+# macro_sequence
+
+# end
+# entity
+decidirSinal
+# storage
+db|projetoSD.(4).cnf
+db|projetoSD.(4).cnf
+# case_insensitive
+# source_file
+decidirsinal.bdf
+3278bb55f9f118418d8a1b5dddaa4376
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|somadorSupremo:inst|decidirSinal:inst19
+ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorBmagnitude
+# storage
+db|projetoSD.(5).cnf
+db|projetoSD.(5).cnf
+# case_insensitive
+# source_file
+amaiorbmagnitude.bdf
+b246c57b4ceabfa54152ad3f93299
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst2
+ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst1
+ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst2
+ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst1
 }
 # macro_sequence
 
@@ -63,8 +147,8 @@ ULA:inst|AmaiorB:inst10
 # entity
 AigualB
 # storage
-db|projetoSD.(5).cnf
-db|projetoSD.(5).cnf
+db|projetoSD.(6).cnf
+db|projetoSD.(6).cnf
 # case_insensitive
 # source_file
 aigualb.bdf
@@ -87,8 +171,8 @@ ULA:inst|AmaiorB:inst10|AigualB:inst12
 # entity
 juntar
 # storage
-db|projetoSD.(6).cnf
-db|projetoSD.(6).cnf
+db|projetoSD.(7).cnf
+db|projetoSD.(7).cnf
 # case_insensitive
 # source_file
 juntar.bdf
@@ -111,8 +195,8 @@ ULA:inst|juntar:inst18
 # entity
 Mux2x1-5
 # storage
-db|projetoSD.(7).cnf
-db|projetoSD.(7).cnf
+db|projetoSD.(8).cnf
+db|projetoSD.(8).cnf
 # case_insensitive
 # source_file
 mux2x1-5.bdf
@@ -132,8 +216,8 @@ ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1-5:inst8
 # entity
 SomaTotal
 # storage
-db|projetoSD.(8).cnf
-db|projetoSD.(8).cnf
+db|projetoSD.(9).cnf
+db|projetoSD.(9).cnf
 # case_insensitive
 # source_file
 somatotal.bdf
@@ -153,8 +237,8 @@ ULA:inst|subtrator:inst1|somadorSupremo:inst|SomaTotal:inst3
 # entity
 SomadorCompleto
 # storage
-db|projetoSD.(9).cnf
-db|projetoSD.(9).cnf
+db|projetoSD.(10).cnf
+db|projetoSD.(10).cnf
 # case_insensitive
 # source_file
 somadorcompleto.bdf
@@ -210,8 +294,8 @@ ULA:inst|ComplementoA2:inst5|SomadorCompleto:inst3
 # entity
 mux2x1
 # storage
-db|projetoSD.(10).cnf
-db|projetoSD.(10).cnf
+db|projetoSD.(11).cnf
+db|projetoSD.(11).cnf
 # case_insensitive
 # source_file
 mux2x1.bdf
@@ -233,8 +317,8 @@ ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1:inst6
 # entity
 ComplementoA2
 # storage
-db|projetoSD.(11).cnf
-db|projetoSD.(11).cnf
+db|projetoSD.(12).cnf
+db|projetoSD.(12).cnf
 # case_insensitive
 # source_file
 complementoa2.bdf
@@ -257,8 +341,8 @@ ULA:inst|ComplementoA2:inst5
 # entity
 Comp2-5
 # storage
-db|projetoSD.(12).cnf
-db|projetoSD.(12).cnf
+db|projetoSD.(13).cnf
+db|projetoSD.(13).cnf
 # case_insensitive
 # source_file
 comp2-5.bdf
@@ -278,8 +362,8 @@ ULA:inst|subtrator:inst1|somadorSupremo:inst|comp2-5:inst10
 # entity
 subtrator
 # storage
-db|projetoSD.(13).cnf
-db|projetoSD.(13).cnf
+db|projetoSD.(14).cnf
+db|projetoSD.(14).cnf
 # case_insensitive
 # source_file
 subtrator.bdf
@@ -298,8 +382,8 @@ ULA:inst|subtrator:inst1
 # entity
 AandB
 # storage
-db|projetoSD.(14).cnf
-db|projetoSD.(14).cnf
+db|projetoSD.(15).cnf
+db|projetoSD.(15).cnf
 # case_insensitive
 # source_file
 aandb.bdf
@@ -318,8 +402,8 @@ ULA:inst|AandB:inst6
 # entity
 axorb
 # storage
-db|projetoSD.(15).cnf
-db|projetoSD.(15).cnf
+db|projetoSD.(16).cnf
+db|projetoSD.(16).cnf
 # case_insensitive
 # source_file
 axorb.bdf
@@ -338,8 +422,8 @@ ULA:inst|axorb:inst7
 # entity
 Mux3x1
 # storage
-db|projetoSD.(16).cnf
-db|projetoSD.(16).cnf
+db|projetoSD.(17).cnf
+db|projetoSD.(17).cnf
 # case_insensitive
 # source_file
 mux3x1.bdf
@@ -356,86 +440,22 @@ ULA:inst|Mux3x1:inst12
 
 # end
 # entity
-somadorSupremo
-# storage
-db|projetoSD.(2).cnf
-db|projetoSD.(2).cnf
-# case_insensitive
-# source_file
-somadorsupremo.bdf
-34969f40aaa4699dc1e11b8311ba057
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst|somadorSupremo:inst
-ULA:inst|subtrator:inst1|somadorSupremo:inst
-}
-# macro_sequence
-
-# end
-# entity
-decidirSinal
+AmaiorB
 # storage
 db|projetoSD.(18).cnf
 db|projetoSD.(18).cnf
 # case_insensitive
 # source_file
-decidirsinal.bdf
-3278bb55f9f118418d8a1b5dddaa4376
+amaiorb.bdf
+c9d0497d7ccf987fd0aa3d62b5166d3
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|somadorSupremo:inst|decidirSinal:inst19
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19
-}
-# macro_sequence
-
-# end
-# entity
-AmaiorBmagnitude
-# storage
-db|projetoSD.(20).cnf
-db|projetoSD.(20).cnf
-# case_insensitive
-# source_file
-amaiorbmagnitude.bdf
-b246c57b4ceabfa54152ad3f93299
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst2
-ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst1
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst2
-ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19|AmaiorBmagnitude:inst1
-}
-# macro_sequence
-
-# end
-# entity
-ULA
-# storage
-db|projetoSD.(3).cnf
-db|projetoSD.(3).cnf
-# case_insensitive
-# source_file
-ula.bdf
-7269d8a5eaf675bd14154fd864d909
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst
+ULA:inst|AmaiorB:inst9
+ULA:inst|AmaiorB:inst10
 }
 # macro_sequence
 
@@ -443,8 +463,8 @@ ULA:inst
 # entity
 Decodificador4bits
 # storage
-db|projetoSD.(17).cnf
-db|projetoSD.(17).cnf
+db|projetoSD.(19).cnf
+db|projetoSD.(19).cnf
 # case_insensitive
 # source_file
 decodificador4bits.bdf
@@ -464,8 +484,8 @@ Decodificador4bits:inst6
 # entity
 decodificador5bits
 # storage
-db|projetoSD.(19).cnf
-db|projetoSD.(19).cnf
+db|projetoSD.(20).cnf
+db|projetoSD.(20).cnf
 # case_insensitive
 # source_file
 decodificador5bits.bdf
@@ -477,26 +497,6 @@ AUTO
 }
 # hierarchies {
 decodificador5bits:inst4
-}
-# macro_sequence
-
-# end
-# entity
-projeto
-# storage
-db|projetoSD.(0).cnf
-db|projetoSD.(0).cnf
-# case_insensitive
-# source_file
-projeto.bdf
-25932f97df3a20e2ff7550514c31516b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

@@ -36,8 +36,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name TOP_LEVEL_ENTITY projeto
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:15:59  AUGUST 17, 2022"
@@ -71,7 +71,6 @@ set_location_assignment PIN_W25 -to led19
 set_location_assignment PIN_U23 -to led20
 set_location_assignment PIN_U24 -to led21
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_GeralSomador000.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_location_assignment PIN_AD17 -to led1
 set_location_assignment PIN_AE17 -to led2
@@ -140,3 +139,24 @@ set_global_assignment -name BDF_FILE apagar.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE testeGeral.vwf
 set_global_assignment -name BDF_FILE AmaiorBmagnitude.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE teste_GeralSomador000.vwf
+set_location_assignment PIN_Y23 -to SinalA
+set_location_assignment PIN_Y24 -to A[3]
+set_location_assignment PIN_AA22 -to A[2]
+set_location_assignment PIN_AA23 -to A[1]
+set_location_assignment PIN_AA24 -to A[0]
+set_location_assignment PIN_AB24 -to SinalB
+set_location_assignment PIN_AC24 -to B[3]
+set_location_assignment PIN_AB25 -to B[2]
+set_location_assignment PIN_AC25 -to B[1]
+set_location_assignment PIN_AB26 -to B[0]
+set_location_assignment PIN_AC26 -to S2
+set_location_assignment PIN_AB27 -to S1
+set_location_assignment PIN_AD27 -to S0
+set_location_assignment PIN_H15 -to Sinal
+set_location_assignment PIN_G16 -to F[4]
+set_location_assignment PIN_G15 -to F[3]
+set_location_assignment PIN_F15 -to F[2]
+set_location_assignment PIN_H17 -to F[1]
+set_location_assignment PIN_J16 -to F[0]
+set_location_assignment PIN_J15 -to Status
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
