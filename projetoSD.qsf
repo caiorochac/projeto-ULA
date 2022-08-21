@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C70F896C6
-set_global_assignment -name TOP_LEVEL_ENTITY somadorSupremo
+set_global_assignment -name TOP_LEVEL_ENTITY projeto
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:15:59  AUGUST 17, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -110,10 +110,24 @@ set_global_assignment -name BDF_FILE decodificador5bits.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE teste_decod5bits.vwf
 set_global_assignment -name BDF_FILE apagar.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE testeGeral.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_somador.vwf
+set_global_assignment -name BDF_FILE AmaiorBmagnitude.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_somador.vwf
-set_global_assignment -name BDF_FILE AmaiorBmagnitude.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_AG13 -to led_15
+set_location_assignment PIN_AE16 -to led_16
+set_location_assignment PIN_AF16 -to led_17
+set_location_assignment PIN_AG16 -to led_18
+set_location_assignment PIN_AE17 -to led_19
+set_location_assignment PIN_AF17 -to led_20
+set_location_assignment PIN_AD17 -to led_21
+set_location_assignment PIN_AE8 -to led15
+set_location_assignment PIN_AF9 -to led16
+set_location_assignment PIN_AH9 -to led17
+set_location_assignment PIN_AD10 -to led18
+set_location_assignment PIN_AF10 -to led19
+set_location_assignment PIN_AD11 -to led20
+set_location_assignment PIN_AD12 -to led21
