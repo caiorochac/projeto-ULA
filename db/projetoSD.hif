@@ -20,46 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-projeto
-# storage
-db|projetoSD.(0).cnf
-db|projetoSD.(0).cnf
-# case_insensitive
-# source_file
-projeto.bdf
-85372565fb952d145a2a43bd0fd3b0
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-ULA
-# storage
-db|projetoSD.(1).cnf
-db|projetoSD.(1).cnf
-# case_insensitive
-# source_file
-ula.bdf
-7269d8a5eaf675bd14154fd864d909
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst
-}
-# macro_sequence
-
-# end
-# entity
 Mux5x1
 # storage
 db|projetoSD.(2).cnf
@@ -163,7 +123,7 @@ ULA:inst|somadorSupremo:inst|decidirSinal:inst19|AigualB:inst
 ULA:inst|subtrator:inst1|somadorSupremo:inst|decidirSinal:inst19|AigualB:inst
 ULA:inst|AigualB:inst8
 ULA:inst|AmaiorB:inst9|AigualB:inst12
-ULA:inst|AmaiorB:inst10|AigualB:inst12
+ULA:inst|AmaiorB:inst4|AigualB:inst12
 }
 # macro_sequence
 
@@ -440,27 +400,6 @@ ULA:inst|Mux3x1:inst12
 
 # end
 # entity
-AmaiorB
-# storage
-db|projetoSD.(18).cnf
-db|projetoSD.(18).cnf
-# case_insensitive
-# source_file
-amaiorb.bdf
-c9d0497d7ccf987fd0aa3d62b5166d3
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst|AmaiorB:inst9
-ULA:inst|AmaiorB:inst10
-}
-# macro_sequence
-
-# end
-# entity
 Decodificador4bits
 # storage
 db|projetoSD.(19).cnf
@@ -517,6 +456,67 @@ AUTO
 }
 # hierarchies {
 negadordea:inst8
+}
+# macro_sequence
+
+# end
+# entity
+projeto
+# storage
+db|projetoSD.(0).cnf
+db|projetoSD.(0).cnf
+# case_insensitive
+# source_file
+projeto.bdf
+578948af4bec4a691ef125a132a7132
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|projetoSD.(1).cnf
+db|projetoSD.(1).cnf
+# case_insensitive
+# source_file
+ula.bdf
+80b957f01feaa996b98ae234d6a0639
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorB
+# storage
+db|projetoSD.(18).cnf
+db|projetoSD.(18).cnf
+# case_insensitive
+# source_file
+amaiorb.bdf
+43e48e5d89494c8b8ac55e2030ebf0f2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AmaiorB:inst9
+ULA:inst|AmaiorB:inst4
 }
 # macro_sequence
 
