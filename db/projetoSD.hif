@@ -1,5 +1,5 @@
 Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 12
 1222
 OFF
@@ -20,6 +20,26 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+projeto
+# storage
+db|projetoSD.(0).cnf
+db|projetoSD.(0).cnf
+# case_insensitive
+# source_file
+projeto.bdf
+578948af4bec4a691ef125a132a7132
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 Mux5x1
 # storage
 db|projetoSD.(2).cnf
@@ -27,7 +47,7 @@ db|projetoSD.(2).cnf
 # case_insensitive
 # source_file
 mux5x1.bdf
-df8cce24ee5c850638b5115d26b558
+c48171e1e6ddfc89609bbc185fe5df5
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -68,7 +88,7 @@ db|projetoSD.(4).cnf
 # case_insensitive
 # source_file
 decidirsinal.bdf
-3278bb55f9f118418d8a1b5dddaa4376
+f3f58e4b66646f9866644353a9f76f90
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -89,7 +109,7 @@ db|projetoSD.(5).cnf
 # case_insensitive
 # source_file
 amaiorbmagnitude.bdf
-b246c57b4ceabfa54152ad3f93299
+de11f046136dceca2a5464f77b5d2e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -136,7 +156,7 @@ db|projetoSD.(7).cnf
 # case_insensitive
 # source_file
 juntar.bdf
-546bff9bf6e4fe89af45c4aa3027e92d
+b8ea7fdc9e2cdcebb544ce473421add8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -145,6 +165,7 @@ AUTO
 # hierarchies {
 ULA:inst|somadorSupremo:inst|juntar:inst13
 ULA:inst|subtrator:inst1|somadorSupremo:inst|juntar:inst13
+ULA:inst|juntar:inst10
 ULA:inst|juntar:inst17
 ULA:inst|juntar:inst19
 ULA:inst|juntar:inst18
@@ -160,7 +181,7 @@ db|projetoSD.(8).cnf
 # case_insensitive
 # source_file
 mux2x1-5.bdf
-6d59b1f691327efa2cc5429c3e67a043
+768c30be29ff1545c7782e1605cd958
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -169,6 +190,7 @@ AUTO
 # hierarchies {
 ULA:inst|somadorSupremo:inst|mux2x1-5:inst8
 ULA:inst|subtrator:inst1|somadorSupremo:inst|mux2x1-5:inst8
+ULA:inst|mux2x1-5:inst13
 }
 # macro_sequence
 
@@ -306,7 +328,7 @@ db|projetoSD.(13).cnf
 # case_insensitive
 # source_file
 comp2-5.bdf
-302eb4999923e3d6882ddf1f9e98c21
+f3c6a4059a1e6ea986afa38cbea5774
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -327,7 +349,7 @@ db|projetoSD.(14).cnf
 # case_insensitive
 # source_file
 subtrator.bdf
-662f2b62b43ecd33a84fdbd163b445c9
+4bad96fc7a4cdc19242ff76ee9aaa74
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -387,7 +409,7 @@ db|projetoSD.(17).cnf
 # case_insensitive
 # source_file
 mux3x1.bdf
-449a37db3d26e21563eb5b4d9f79d961
+1edd22be37a8991667d8765f2d97ae2
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -395,107 +417,6 @@ AUTO
 }
 # hierarchies {
 ULA:inst|Mux3x1:inst12
-}
-# macro_sequence
-
-# end
-# entity
-Decodificador4bits
-# storage
-db|projetoSD.(19).cnf
-db|projetoSD.(19).cnf
-# case_insensitive
-# source_file
-decodificador4bits.bdf
-f1d75c18b9c73868d86ba44301c2712
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Decodificador4bits:inst7
-Decodificador4bits:inst6
-}
-# macro_sequence
-
-# end
-# entity
-decodificador5bits
-# storage
-db|projetoSD.(20).cnf
-db|projetoSD.(20).cnf
-# case_insensitive
-# source_file
-decodificador5bits.bdf
-78e7ef1b88ffe6ffc574efaf272d31c6
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-decodificador5bits:inst4
-}
-# macro_sequence
-
-# end
-# entity
-negadordea
-# storage
-db|projetoSD.(21).cnf
-db|projetoSD.(21).cnf
-# case_insensitive
-# source_file
-negadordea.bdf
-b4d2444b42e9bd0fafefc1b6c675c7
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-negadordea:inst8
-}
-# macro_sequence
-
-# end
-# entity
-projeto
-# storage
-db|projetoSD.(0).cnf
-db|projetoSD.(0).cnf
-# case_insensitive
-# source_file
-projeto.bdf
-578948af4bec4a691ef125a132a7132
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-ULA
-# storage
-db|projetoSD.(1).cnf
-db|projetoSD.(1).cnf
-# case_insensitive
-# source_file
-ula.bdf
-80b957f01feaa996b98ae234d6a0639
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-ULA:inst
 }
 # macro_sequence
 
@@ -517,6 +438,107 @@ AUTO
 # hierarchies {
 ULA:inst|AmaiorB:inst9
 ULA:inst|AmaiorB:inst4
+}
+# macro_sequence
+
+# end
+# entity
+Decodificador4bits
+# storage
+db|projetoSD.(19).cnf
+db|projetoSD.(19).cnf
+# case_insensitive
+# source_file
+decodificador4bits.bdf
+e0781b58f5cacfd8b8aa897ca3e8b3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decodificador4bits:inst7
+Decodificador4bits:inst6
+}
+# macro_sequence
+
+# end
+# entity
+decodificador5bits
+# storage
+db|projetoSD.(20).cnf
+db|projetoSD.(20).cnf
+# case_insensitive
+# source_file
+decodificador5bits.bdf
+6898cbb97aabc6ca9c72c9757e4f6e1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decodificador5bits:inst4
+}
+# macro_sequence
+
+# end
+# entity
+negadordea
+# storage
+db|projetoSD.(21).cnf
+db|projetoSD.(21).cnf
+# case_insensitive
+# source_file
+negadordea.bdf
+f64beba819a1ddc533d3c57dcd321fc6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+negadordea:inst8
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|projetoSD.(1).cnf
+db|projetoSD.(1).cnf
+# case_insensitive
+# source_file
+ula.bdf
+cc5f471898de14ed713a403777509f29
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+zero
+# storage
+db|projetoSD.(22).cnf
+db|projetoSD.(22).cnf
+# case_insensitive
+# source_file
+zero.bdf
+d4fff16e38e754ceb3b93a681f88b544
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|zero:inst15
 }
 # macro_sequence
 
